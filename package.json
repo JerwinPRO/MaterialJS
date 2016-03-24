@@ -1,0 +1,25 @@
+{
+    "name": "cm-materialjs",
+    "homepage": "http://cosmicmind.io",
+    "author": {
+        "name": "CosmicMind, Inc.",
+        "email": "support@cosmicmind.io"
+    },
+    "version": "0.0.1",
+    "license": [{
+        "type": "BSD",
+        "url": "https://github.com/CosmicMind/MaterialJS/blob/master/LICENSE.md"
+    }],
+    "engines": {
+        "node": ">=4.4.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CosmicMind/MaterialJS.git"
+    },
+    "description": "Express your creativity with Material, an animation and graphics framework for Google's Material Design and Apple's Flat UI in Javascript.",
+    "keywords": [],
+    "scripts": {},
+    "devDependencies": {},
+    "dependencies": {}
+}
