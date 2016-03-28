@@ -302,13 +302,9 @@
 					@usage		Sets a message to the console with an error status.
 					@param		message : The message string that is written to the console.
 					*/
-					self.error = function ( message )
-					{
-						if ( _debug && $ )
-						{
-							message = _$.normalizeSpace( String( message ) );
-
-							$.error( message );
+					self.error = function (message) {
+						if ( _debug && $ ) {
+							$.error(message);
 						}
 					};
 
@@ -317,13 +313,9 @@
 					@usage		Sets a message to the console with a warning status.
 					@param		message : The message string that is written to the console.
 					*/
-					self.warn = function ( message )
-					{
-						if ( _debug && $ )
-						{
-							message = _$.normalizeSpace( String( message ) );
-
-							$.warn( message );
+					self.warn = function (message) {
+						if ( _debug && $ ) {
+							$.warn(message);
 						}
 					};
 
@@ -332,13 +324,9 @@
 					@usage		Sets a message to the console with a log status.
 					@param		message : The message string that is written to the console.
 					*/
-					self.log = function ( message )
-					{
-						if ( _debug && $ )
-						{
-							message = _$.normalizeSpace( String( message ) );
-
-							$.log( message );
+					self.log = function (message) {
+						if ( _debug && $ ) {
+							$.log(message);
 						}
 					};
 
@@ -4089,10 +4077,8 @@
 			@param			message : The value to log.
 			@return			The namespace "$" Object.
 			*/
-			_$.error = function ( message )
-			{
-				_Console.error( message );
-
+			_$.error = function (message) {
+				_Console.error(message);
 				return _$;
 			};
 
@@ -4102,10 +4088,8 @@
 			@param			message : The value to log.
 			@return			The namespace "$" Object.
 			*/
-			_$.warn = function ( message )
-			{
-				_Console.warn( message );
-
+			_$.warn = function (message) {
+				_Console.warn(message);
 				return _$;
 			};
 
@@ -4115,10 +4099,8 @@
 			@param			message : The value to log.
 			@return			The namespace "$" Object.
 			*/
-			_$.log = function ( message )
-			{
-				_Console.log( message );
-
+			_$.log = function (message) {
+				_Console.log(message);
 				return _$;
 			};
 
@@ -5850,6 +5832,7 @@
 				_AjaxHttp.start();
 			}, 4 );
 
+			window.material = _$;
 			window.$ = _$;
 
 	} ) ( window, document, undefined );
