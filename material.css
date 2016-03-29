@@ -571,7 +571,7 @@ nav {
 
 /*cyan*/
 .cyan {
-    background-color: rgba(0, 188, 212, 1) !important;
+    background-color: rgb(0,188,212) !important;
 }
 .cyan.lighten-5 {
     background-color: rgba(224, 247, 250, 1) !important;
