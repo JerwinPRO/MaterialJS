@@ -514,59 +514,59 @@ nav {
 }
 
 /*light blue*/
-.lightBlue {
-    background-color: rgba(3, 169, 244, 1) !important;
+.light-blue {
+    background-color: rgb(3,169,244) !important;
 }
-.lightBlue.lighten-5 {
-    background-color: rgba(225, 245, 254, 1) !important;
-}
-
-.lightBlue.lighten-4 {
-    background-color: rgba(179, 229, 252, 1) !important;
+.light-blue.lighten-5 {
+    background-color: rgb(225,245,254) !important;
 }
 
-.lightBlue.lighten-3 {
-    background-color: rgba(129, 212, 250, 1) !important;
+.light-blue.lighten-4 {
+    background-color: rgb(179,229,252) !important;
 }
 
-.lightBlue.lighten-2 {
-    background-color: rgba(79, 195, 247, 1) !important;
+.light-blue.lighten-3 {
+    background-color: rgb(129,212,250) !important;
 }
 
-.lightBlue.lighten-1 {
-    background-color: rgba(41, 182, 246, 1) !important;
+.light-blue.lighten-2 {
+    background-color: rgb(79,195,247) !important;
 }
 
-.lightBlue.darken-1 {
-    background-color: rgba(3, 155, 229, 1) !important;
+.light-blue.lighten-1 {
+    background-color: rgb(41,182,246) !important;
 }
 
-.lightBlue.darken-2 {
-    background-color: rgba(2, 136, 209, 1) !important;
+.light-blue.darken-1 {
+    background-color: rgb(3,155,229) !important;
 }
 
-.lightBlue.darken-3 {
-    background-color: rgba(2, 119, 189, 1) !important;
+.light-blue.darken-2 {
+    background-color: rgb(2,136,209) !important;
 }
 
-.lightBlue.darken-4 {
-    background-color: rgba(1, 87, 155, 1) !important;
+.light-blue.darken-3 {
+    background-color: rgb(2,119,189) !important;
 }
 
-.lightBlue.accent-1 {
-    background-color: rgba(128, 216, 255, 1) !important;
+.light-blue.darken-4 {
+    background-color: rgb(1,87,155) !important;
 }
 
-.lightBlue.accent-2 {
-    background-color: rgba(64, 196, 255, 1) !important;
+.light-blue.accent-1 {
+    background-color: rgb(128,216,255) !important;
 }
 
-.lightBlue.accent-3 {
-    background-color: rgba(0, 176, 255, 1) !important;
+.light-blue.accent-2 {
+    background-color: rgb(64,196,255) !important;
 }
 
-.lightBlue.accent-4 {
-    background-color: rgba(0, 145, 234, 1) !important;
+.light-blue.accent-3 {
+    background-color: rgb(0,176,255) !important;
+}
+
+.light-blue.accent-4 {
+    background-color: rgb(0,145,234) !important;
 }
 
 /*cyan*/
