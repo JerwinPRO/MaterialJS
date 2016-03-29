@@ -83,6 +83,24 @@ html {
     float: right !important;
 }
 
+.center {
+    float: none !important;
+    margin: 0 auto !important;
+    display: flex !important;
+}
+
+.fixed {
+    position: fixed !important;
+}
+
+nav {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .toolbar {
     float: left;
     position: relative;
@@ -107,14 +125,17 @@ html {
     border: none;
     background: none;
     display: inline-block;
+    z-index: 1;
 }
 
 .toolbar > p.title {
     margin: 0;
+    position: relative;
     padding: 0 24px;
     height: 64px;
     line-height: 64px;
     display: inline-block;
+    z-index: 0;
 }
 
 .toolbar.small > p.title {
