@@ -152,10 +152,12 @@ nav {
 }
 
 .toolbar > h1.left {
+    float: none !important;
     margin: 0 auto 0 0 !important;
 }
 
 .toolbar > h1.right {
+    float: none !important;
     margin: 0 0 0 auto !important;
 }
 

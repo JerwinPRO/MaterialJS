@@ -2723,12 +2723,12 @@
 			},
 
 			/*
-			@function		addCss
+			@function		addCSS
 			@usage			Adds CSS to the document, by appending a style element to the head of the page.
 			@param			text : The CSS text value.
 			@return			The namespace "$" Object.
 			*/
-			_$.addCss = function ( text )
+			_$.addCSS = function ( text )
 			{
 				if ( typeof text === 'string' )
 				{
@@ -2750,12 +2750,12 @@
 			};
 
 			/*
-			@function		addJs
+			@function		addJS
 			@usage			Adds JS to the document, by appending a script element to the body of the page.
 			@param			text : The JS text value.
 			@return			The namespace "$" Object.
 			*/
-			_$.addJs = function ( text )
+			_$.addJS = function ( text )
 			{
 				if ( typeof text === 'string' )
 				{
@@ -3676,7 +3676,7 @@
 						/*
 						@note	Check if the cookie already exists in the current session. This will be returned rather than issuing the overhead to get the cookie values.
 						*/
-						if( _cache.has( c ) )
+						if ( _cache.has( c ) )
 						{
 							return _cache.get( c );
 						}
