@@ -347,58 +347,58 @@ nav {
 
 /*deepPurple*/
 .deepPurple {
-    background-color: rgba(103, 58, 183, 1);
+    background-color: rgb(103,58,183);
 }
 .deepPurple.lighten-5 {
-    background-color: rgba(237, 231, 246, 1);
+    background-color: rgb(237,231,246);
 }
 
 .deepPurple.lighten-4 {
-    background-color: rgba(209, 196, 233, 1);
+    background-color: rgb(209,196,233);
 }
 
 .deepPurple.lighten-3 {
-    background-color: rgba(179, 157, 219, 1);
+    background-color: rgb(179,157,219);
 }
 
 .deepPurple.lighten-2 {
-    background-color: rgba(149, 117, 205, 1);
+    background-color: rgb(149,117,205);
 }
 
 .deepPurple.lighten-1 {
-    background-color: rgba(126, 87, 194, 1);
+    background-color: rgb(126,87,194);
 }
 
 .deepPurple.darken-1 {
-    background-color: rgba(94, 53, 177, 1);
+    background-color: rgb(94,53,177);
 }
 
 .deepPurple.darken-2 {
-    background-color: rgba(81, 45, 168, 1);
+    background-color: rgb(81,45,168);
 }
 
 .deepPurple.darken-3 {
-    background-color: rgba(69, 39, 160, 1);
+    background-color: rgb(69,39,160);
 }
 
 .deepPurple.darken-4 {
-    background-color: rgba(49, 27, 146, 1);
+    background-color: rgb(49,27,146);
 }
 
 .deepPurple.accent-1 {
-    background-color: rgba(179, 136, 255, 1);
+    background-color: rgb(179,136,255);
 }
 
 .deepPurple.accent-2 {
-    background-color: rgba(124, 77, 255, 1);
+    background-color: rgb(124,77,255);
 }
 
 .deepPurple.accent-3 {
-    background-color: rgba(101, 31, 255, 1);
+    background-color: rgb(101,31,255);
 }
 
 .deepPurple.accent-4 {
-    background-color: rgba(98, 0, 234, 1);
+    background-color: rgb(98,0,234);
 }
 
 /*indigo*/
