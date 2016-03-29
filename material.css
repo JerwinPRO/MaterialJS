@@ -54,7 +54,7 @@ html {
 }
 
 .white {
-    background-color: #fff !important;
+    background-color: rgba(255, 255, 255, 1) !important;
 }
 
 .grey {
@@ -141,8 +141,8 @@ nav {
     z-index: 1;
 }
 
-.toolbar > h1 {
-    margin: 0 auto !important;
+.toolbar > header {
+    margin: 0 auto 0 0 !important;
     position: relative;
     padding: 0 24px;
     height: 64px;
@@ -151,24 +151,31 @@ nav {
     display: flex !important;
 }
 
-.toolbar > h1.left {
+.toolbar > header.center {
+    float: none !important;
+    margin: 0 auto !important;
+}
+
+.toolbar > header.left {
     float: none !important;
     margin: 0 auto 0 0 !important;
 }
 
-.toolbar > h1.right {
+.toolbar > header.right {
     float: none !important;
     margin: 0 0 0 auto !important;
 }
 
 .toolbar.small > a,
-.toolbar.small > h1 {
+.toolbar.small > button,
+.toolbar.small > header {
     height: 56px !important;
     line-height: 56px !important;
 }
 
 .toolbar.large > a,
-.toolbar.large > h1 {
+.toolbar.large > button,
+.toolbar.large > header {
     height: 84px !important;
     line-height: 84px !important;
 }
