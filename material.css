@@ -235,58 +235,58 @@ nav {
 
 /*pink*/
 .pink {
-    background-color: rgba(233, 30, 99, 1);
+    background-color: rgb(233,30,99);
 }
 .pink.lighten-5 {
-    background-color: rgba(252, 228, 236, 1);
+    background-color: rgb(252,228,236);
 }
 
 .pink.lighten-4 {
-    background-color: rgba(248, 107, 208, 1);
+    background-color: rgb(248,187,208);
 }
 
 .pink.lighten-3 {
-    background-color: rgba(244, 143, 177, 1);
+    background-color: rgb(244,143,177);
 }
 
 .pink.lighten-2 {
-    background-color: rgba(240, 98, 146, 1);
+    background-color: rgb(240,98,146);
 }
 
 .pink.lighten-1 {
-    background-color: rgba(236, 64, 122, 1);
+    background-color: rgb(236,64,122);
 }
 
 .pink.darken-1 {
-    background-color: rgba(216, 27, 96, 1);
+    background-color: rgb(216,27,96);
 }
 
 .pink.darken-2 {
-    background-color: rgba(194, 24, 191, 1);
+    background-color: rgb(194,24,91);
 }
 
 .pink.darken-3 {
-    background-color: rgba(173, 20, 87, 1);
+    background-color: rgb(173,20,87);
 }
 
 .pink.darken-4 {
-    background-color: rgba(136, 14, 79, 1);
+    background-color: rgb(136,14,79);
 }
 
 .pink.accent-1 {
-    background-color: rgba(255, 128, 171, 1);
+    background-color: rgb(255,128,171);
 }
 
 .pink.accent-2 {
-    background-color: rgba(255, 64, 129, 1);
+    background-color: rgb(255,64,129);
 }
 
 .pink.accent-3 {
-    background-color: rgba(245, 0, 87, 1);
+    background-color: rgb(245,0,87);
 }
 
 .pink.accent-4 {
-    background-color: rgba(197, 17, 98, 1);
+    background-color: rgb(197,17,98);
 }
 
 /*purple*/
