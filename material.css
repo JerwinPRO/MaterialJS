@@ -43,6 +43,16 @@ html {
     height: 100%;
 }
 
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+.show {
+    display: block;
+    visibility: visible;
+}
+
 .white {
     background-color: #fff !important;
 }
@@ -98,16 +108,18 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
 }
 
 .toolbar {
-    float: left;
     position: relative;
     width: 100%;
     height: 64px;
     background-color: #fff;
     box-shadow: 0 0.25px 6px #9e9e9e;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }
 
 .toolbar.small {
@@ -118,32 +130,43 @@ nav {
     height: 84px !important;
 }
 
-.toolbar button {
+.toolbar > a,
+.toolbar > button {
     margin: 0;
     padding: 0 24px;
-    height: 100%;
+    height: 64px;
+    line-height: 64px;
     border: none;
     background: none;
-    display: inline-block;
     z-index: 1;
 }
 
-.toolbar > p.title {
-    margin: 0;
+.toolbar > h1 {
+    margin: 0 auto !important;
     position: relative;
     padding: 0 24px;
     height: 64px;
     line-height: 64px;
-    display: inline-block;
     z-index: 0;
+    display: flex !important;
 }
 
-.toolbar.small > p.title {
+.toolbar > h1.left {
+    margin: 0 auto 0 0 !important;
+}
+
+.toolbar > h1.right {
+    margin: 0 0 0 auto !important;
+}
+
+.toolbar.small > a,
+.toolbar.small > h1 {
     height: 56px !important;
     line-height: 56px !important;
 }
 
-.toolbar.large > p.title {
+.toolbar.large > a,
+.toolbar.large > h1 {
     height: 84px !important;
     line-height: 84px !important;
 }
