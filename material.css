@@ -291,58 +291,58 @@ nav {
 
 /*purple*/
 .purple {
-    background-color: rgba(156, 39, 176, 1);
+    background-color: rgb(156,39,176);
 }
 .purple.lighten-5 {
-    background-color: rgba(243, 229, 245, 1);
+    background-color: rgb(243,229,245);
 }
 
 .purple.lighten-4 {
-    background-color: rgba(225, 190, 231, 1);
+    background-color: rgb(225,190,231);
 }
 
 .purple.lighten-3 {
-    background-color: rgba(206, 147, 216, 1);
+    background-color: rgb(206,147,216);
 }
 
 .purple.lighten-2 {
-    background-color: rgba(186, 104, 200, 1);
+    background-color: rgb(186,104,200);
 }
 
 .purple.lighten-1 {
-    background-color: rgba(171, 71, 188, 1);
+    background-color: rgb(171,71,188);
 }
 
 .purple.darken-1 {
-    background-color: rgba(142, 36, 170, 1);
+    background-color: rgb(142,36,170);
 }
 
 .purple.darken-2 {
-    background-color: rgba(123, 31, 162, 1);
+    background-color: rgb(123,31,162);
 }
 
 .purple.darken-3 {
-    background-color: rgba(106, 27, 154, 1);
+    background-color: rgb(106,27,154);
 }
 
 .purple.darken-4 {
-    background-color: rgba(74, 20, 140, 1);
+    background-color: rgb(74,20,140);
 }
 
 .purple.accent-1 {
-    background-color: rgba(234, 128, 252, 1);
+    background-color: rgb(234,128,252);
 }
 
 .purple.accent-2 {
-    background-color: rgba(224, 64, 251, 1);
+    background-color: rgb(224,64,251);
 }
 
 .purple.accent-3 {
-    background-color: rgba(213, 0, 249, 1);
+    background-color: rgb(213,0,249);
 }
 
 .purple.accent-4 {
-    background-color: rgba(170, 0, 255, 1);
+    background-color: rgb(170,0,255);
 }
 
 /*deepPurple*/
