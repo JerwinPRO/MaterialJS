@@ -627,58 +627,58 @@ nav {
 
 /*teal*/
 .teal {
-    background-color: rgba(0, 150, 136, 1) !important;
+    background-color: rgb(0,150,136) !important;
 }
 .teal.lighten-5 {
-    background-color: rgba(224, 242, 241, 1) !important;
+    background-color: rgb(224,242,241) !important;
 }
 
 .teal.lighten-4 {
-    background-color: rgba(178, 223, 219, 1) !important;
+    background-color: rgb(178,223,219) !important;
 }
 
 .teal.lighten-3 {
-    background-color: rgba(128, 203, 196, 1) !important;
+    background-color: rgb(128,203,196) !important;
 }
 
 .teal.lighten-2 {
-    background-color: rgba(77, 182, 172, 1) !important;
+    background-color: rgb(77,182,172) !important;
 }
 
 .teal.lighten-1 {
-    background-color: rgba(38, 166, 154, 1) !important;
+    background-color: rgb(38,166,154) !important;
 }
 
 .teal.darken-1 {
-    background-color: rgba(0, 137, 123, 1) !important;
+    background-color: rgb(0,137,123) !important;
 }
 
 .teal.darken-2 {
-    background-color: rgba(0, 121, 107, 1) !important;
+    background-color: rgb(0,121,107) !important;
 }
 
 .teal.darken-3 {
-    background-color: rgba(0, 105, 92, 1) !important;
+    background-color: rgb(0,105,92) !important;
 }
 
 .teal.darken-4 {
-    background-color: rgba(0, 77, 64, 1) !important;
+    background-color: rgb(0,77,64) !important;
 }
 
 .teal.accent-1 {
-    background-color: rgba(167, 255, 235, 1) !important;
+    background-color: rgb(167,255,235) !important;
 }
 
 .teal.accent-2 {
-    background-color: rgba(100, 255, 218, 1) !important;
+    background-color: rgb(100,255,218) !important;
 }
 
 .teal.accent-3 {
-    background-color: rgba(29, 133, 182, 1) !important;
+    background-color: rgb(29,233,182) !important;
 }
 
 .teal.accent-4 {
-    background-color: rgba(0, 191, 165, 1) !important;
+    background-color: rgb(0,191,165) !important;
 }
 
 /*green*/
