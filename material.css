@@ -198,3 +198,43 @@ nav {
 .toolbar.large > header.title {
 	line-height: 84px !important;
 }
+
+/* Fonts */
+@font-face {
+    font-family: 'Material';
+    src: url('fonts/Material.eot');
+    src: url('fonts/Material.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Material.woff') format('woff'),
+         url('fonts/Material.ttf') format('truetype'),
+         url('fonts/Material.svg#Material') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='ic-']:before{
+	display: inline-block;
+   font-family: 'Material';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+.ic-add:before{content:'\0041';}
+.ic-arrow_back:before{content:'\0042';}
+.ic-arrow_downward:before{content:'\0043';}
+.ic-audio:before{content:'\0044';}
+.ic-bell:before{content:'\0045';}
+.ic-close:before{content:'\0046';}
+.ic-image:before{content:'\0047';}
+.ic-menu:before{content:'\0048';}
+.ic-more-horiz:before{content:'\0049';}
+.ic-more-vert:before{content:'\004a';}
+.ic-pencil:before{content:'\004b';}
+.ic-photo_camera:before{content:'\004c';}
+.ic-photo_library:before{content:'\004d';}
+.ic-search:before{content:'\004e';}
+.ic-settings:before{content:'\004f';}
+.ic-share:before{content:'\0050';}
+.ic-star:before{content:'\0051';}
+.ic-video-camera:before{content:'\0052';}
+.ic-video:before{content:'\0053';}
