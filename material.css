@@ -1075,42 +1075,42 @@ nav {
 
 /*brown*/
 .brown {
-    background-color: rgba(121, 85, 72, 1) !important;
+    background-color: rgb(121,85,72) !important;
 }
 .brown.lighten-5 {
-    background-color: rgba(239, 235, 233, 1) !important;
+    background-color: rgb(239,235,233) !important;
 }
 
 .brown.lighten-4 {
-    background-color: rgba(215, 204, 200, 1) !important;
+    background-color: rgb(215,204,200) !important;
 }
 
 .brown.lighten-3 {
-    background-color: rgba(188, 170, 164, 1) !important;
+    background-color: rgb(188,170,164) !important;
 }
 
 .brown.lighten-2 {
-    background-color: rgba(161, 136, 127, 1) !important;
+    background-color: rgb(161,136,127) !important;
 }
 
 .brown.lighten-1 {
-    background-color: rgba(141, 110, 99, 1) !important;
+    background-color: rgb(141,110,99) !important;
 }
 
 .brown.darken-1 {
-    background-color: rgba(109, 76, 65, 1) !important;
+    background-color: rgb(109,76,65) !important;
 }
 
 .brown.darken-2 {
-    background-color: rgba(93, 64, 55, 1) !important;
+    background-color: rgb(93,64,55) !important;
 }
 
 .brown.darken-3 {
-    background-color: rgba(78, 52, 46, 1) !important;
+    background-color: rgb(78,52,46) !important;
 }
 
 .brown.darken-4 {
-    background-color: rgba(62, 39, 35, 1) !important;
+    background-color: rgb(62,39,35) !important;
 }
 
 /*grey*/
