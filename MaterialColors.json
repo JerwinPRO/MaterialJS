@@ -191,6 +191,22 @@
   "accent3": {"HEX": "#C6FF00", "RGB": "rgb(198,255,0)"},
   "accent4": {"HEX": "#AEEA00", "RGB": "rgb(174,234,0)"}
   },
+  "yellow": {
+  "base": {"HEX": "#FFEB3B", "RGB": "rgb(255,235,59)"},
+  "lighten5": {"HEX": "#FFFDE7", "RGB": "rgb(255,253,231)"},
+  "lighten4": {"HEX": "#FFF9C4", "RGB": "rgb(255,249,196)"},
+  "lighten3": {"HEX": "#FFF59D", "RGB": "rgb(255,245,157)"},
+  "lighten2": {"HEX": "#FFF176", "RGB": "rgb(255,241,118)"},
+  "lighten1": {"HEX": "#FFEE58", "RGB": "rgb(255,238,88)"},
+  "darken1": {"HEX": "#FDD835", "RGB": "rgb(253,216,53)"},
+  "darken2": {"HEX": "#FBC02D", "RGB": "rgb(251,192,45)"},
+  "darken3": {"HEX": "#F9A825", "RGB": "rgb(249,168,37)"},
+  "darken4": {"HEX": "#F57F17", "RGB": "rgb(245,127,23)"},
+  "accent1": {"HEX": "#FFFF8D", "RGB": "rgb(255,255,141)"},
+  "accent2": {"HEX": "#FFFF00", "RGB": "rgb(255,255,0)"},
+  "accent3": {"HEX": "#FFEA00", "RGB": "rgb(255,234,0)"},
+  "accent4": {"HEX": "#FFD600", "RGB": "rgb(255,214,0)"}
+  },
   "": {
   "base": {"HEX": "", "RGB": ""},
   "lighten5": {"HEX": "", "RGB": ""},

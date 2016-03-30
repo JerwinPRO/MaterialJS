@@ -851,58 +851,58 @@ nav {
 
 /*yellow*/
 .yellow {
-    background-color: rgba(255, 235, 59, 1) !important;
+    background-color: rgb(255,235,59) !important;
 }
 .yellow.lighten-5 {
-    background-color: rgba(255, 253, 231, 1) !important;
+    background-color: rgb(255,253,231) !important;
 }
 
 .yellow.lighten-4 {
-    background-color: rgba(255, 249, 196, 1) !important;
+    background-color: rgb(255,249,196) !important;
 }
 
 .yellow.lighten-3 {
-    background-color: rgba(255, 245, 157, 1) !important;
+    background-color: rgb(255,245,157) !important;
 }
 
 .yellow.lighten-2 {
-    background-color: rgba(255, 241, 118, 1) !important;
+    background-color: rgb(255,241,118) !important;
 }
 
 .yellow.lighten-1 {
-    background-color: rgba(255, 238, 88, 1) !important;
+    background-color: rgb(255,238,88) !important;
 }
 
 .yellow.darken-1 {
-    background-color: rgba(253, 216, 53, 1) !important;
+    background-color: rgb(253,216,53) !important;
 }
 
 .yellow.darken-2 {
-    background-color: rgba(251, 192, 45, 1) !important;
+    background-color: rgb(251,192,45) !important;
 }
 
 .yellow.darken-3 {
-    background-color: rgba(249, 168, 37, 1) !important;
+    background-color: rgb(249,168,37) !important;
 }
 
 .yellow.darken-4 {
-    background-color: rgba(245, 127, 23, 1) !important;
+    background-color: rgb(245,127,23) !important;
 }
 
 .yellow.accent-1 {
-    background-color: rgba(255, 255, 141, 1) !important;
+    background-color: rgb(255,255,141) !important;
 }
 
 .yellow.accent-2 {
-    background-color: rgba(255, 255, 0, 1) !important;
+    background-color: rgb(255,255,0) !important;
 }
 
 .yellow.accent-3 {
-    background-color: rgba(255, 234, 0, 1) !important;
+    background-color: rgb(255,234,0) !important;
 }
 
 .yellow.accent-4 {
-    background-color: rgba(255, 214, 0, 1) !important;
+    background-color: rgb(255,214,0) !important;
 }
 
 /*amber*/
