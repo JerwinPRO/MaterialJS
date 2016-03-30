@@ -790,63 +790,63 @@ nav {
 }
 
 .lightGreen.accent-4 {
-    background-color: rgba(100, 221, 23, 1) !important;
+    background-color: rgb(100,221,23) !important;
 }
 
 /*lime*/
 .lime {
-    background-color: rgba(205, 220, 57, 1) !important;
+    background-color: rgb(205,220,57) !important;
 }
 .lime.lighten-5 {
-    background-color: rgba(249, 251, 231, 1) !important;
+    background-color: rgb(249,251,231) !important;
 }
 
 .lime.lighten-4 {
-    background-color: rgba(240, 244, 195, 1) !important;
+    background-color: rgb(240,244,195) !important;
 }
 
 .lime.lighten-3 {
-    background-color: rgba(230, 238, 156, 1) !important;
+    background-color: rgb(230,238,156) !important;
 }
 
 .lime.lighten-2 {
-    background-color: rgba(220, 231, 117, 1) !important;
+    background-color: rgb(220,231,117) !important;
 }
 
 .lime.lighten-1 {
-    background-color: rgba(212, 225, 87, 1) !important;
+    background-color: rgb(212,225,87) !important;
 }
 
 .lime.darken-1 {
-    background-color: rgba(192, 202, 51, 1) !important;
+    background-color: rgb(192,202,51) !important;
 }
 
 .lime.darken-2 {
-    background-color: rgba(175, 180, 43, 1) !important;
+    background-color: rgb(175,180,43) !important;
 }
 
 .lime.darken-3 {
-    background-color: rgba(158, 157, 36, 1) !important;
+    background-color: rgb(158,157,36) !important;
 }
 
 .lime.darken-4 {
-    background-color: rgba(130, 119, 23, 1) !important;
+    background-color: rgb(130,119,23) !important;
 }
 
 .lime.accent-1 {
-    background-color: rgba(244, 255, 129, 1) !important;
+    background-color: rgb(244,255,129) !important;
 }
 
 .lime.accent-2 {
-    background-color: rgba(238, 255, 65, 1) !important;
+    background-color: rgb(238,255,65) !important;
 }
 
 .lime.accent-3 {
-    background-color: rgba(198, 255, 0, 1) !important;
+    background-color: rgb(198,255,0) !important;
 }
 
 .lime.accent-4 {
-    background-color: rgba(174, 234, 0, 1) !important;
+    background-color: rgb(174,234,0) !important;
 }
 
 /*yellow*/
