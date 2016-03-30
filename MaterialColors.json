@@ -292,5 +292,6 @@
   "darken4": {"HEX": "#263238", "RGB": "rgb(38,50,56)"}
   },
   "white": { "HEX": "#FFFFFF", "RGB": "rgb(255,255,255)" },
-  "black": { "HEX": "#000000", "RGBA": "rgba(0,0,0,0)"}
+  "black": { "HEX": "#000000", "RGB": "rgb(0,0,0)"},
+  "clear": { "HEX": "#000000", "RGB": "rgba(0,0,0,0)"},
 }
