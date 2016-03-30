@@ -739,54 +739,54 @@ nav {
 
 /*light green*/
 .lightGreen {
-    background-color: rgba(139, 195, 74, 1) !important;
+    background-color: rgb(139,195,74) !important;
 }
 .lightGreen.lighten-5 {
-    background-color: rgba(241, 248, 233, 1) !important;
+    background-color: rgb(241,248,233) !important;
 }
 
 .lightGreen.lighten-4 {
-    background-color: rgba(220, 237, 200, 1) !important;
+    background-color: rgb(220,237,200) !important;
 }
 
 .lightGreen.lighten-3 {
-    background-color: rgba(197, 225, 165, 1) !important;
+    background-color: rgb(197,225,165) !important;
 }
 
 .lightGreen.lighten-2 {
-    background-color: rgba(174, 213, 129, 1) !important;
+    background-color: rgb(174,213,129) !important;
 }
 
 .lightGreen.lighten-1 {
-    background-color: rgba(156, 204, 101, 1) !important;
+    background-color: rgb(156,204,101) !important;
 }
 
 .lightGreen.darken-1 {
-    background-color: rgba(124, 179, 66, 1) !important;
+    background-color: rgb(124,179,66) !important;
 }
 
 .lightGreen.darken-2 {
-    background-color: rgba(104, 159, 56, 1) !important;
+    background-color: rgb(104,159,56) !important;
 }
 
 .lightGreen.darken-3 {
-    background-color: rgba(85, 139, 47, 1) !important;
+    background-color: rgb(85,139,47) !important;
 }
 
 .lightGreen.darken-4 {
-    background-color: rgba(51, 105, 30, 1) !important;
+    background-color: rgb(51,105,30) !important;
 }
 
 .lightGreen.accent-1 {
-    background-color: rgba(204, 255, 144, 1) !important;
+    background-color: rgb(204,255,144) !important;
 }
 
 .lightGreen.accent-2 {
-    background-color: rgba(178, 255, 89, 1) !important;
+    background-color: rgb(178,255,89) !important;
 }
 
 .lightGreen.accent-3 {
-    background-color: rgba(118, 255, 3, 1) !important;
+    background-color: rgb(118,255,3) !important;
 }
 
 .lightGreen.accent-4 {
