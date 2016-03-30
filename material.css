@@ -1115,83 +1115,82 @@ nav {
 
 /*grey*/
 .grey {
-    background-color: rgba(158, 158, 158, 1) !important;
+    background-color: rgb(158,158,158) !important;
 }
 .grey.lighten-5 {
-    background-color: rgba(250, 250, 250, 1) !important;
+    background-color: rgb(250,250,250) !important;
 }
 
 .grey.lighten-4 {
-    background-color: rgba(245, 245, 245, 1) !important;
+    background-color: rgb(245,245,245) !important;
 }
 
 .grey.lighten-3 {
-    background-color: rgba(238, 238, 238, 1) !important;
+    background-color: rgb(238,238,238) !important;
 }
 
 .grey.lighten-2 {
-    background-color: rgba(224, 224, 224, 1) !important;
+    background-color: rgb(224,224,224) !important;
 }
 
 .grey.lighten-1 {
-    background-color: rgba(189, 189, 189, 1) !important;
+    background-color: rgb(189,189,189) !important;
 }
 
 .grey.darken-1 {
-    background-color: rgba(117, 117, 117, 1) !important;
+    background-color: rgb(117,117,117) !important;
 }
 
 .grey.darken-2 {
-    background-color: rgba(97, 97, 97, 1) !important;
+    background-color: rgb(97,97,97) !important;
 }
 
 .grey.darken-3 {
-    background-color: rgba(66, 66, 66, 1) !important;
+    background-color: rgb(66,66,66) !important;
 }
 
 .grey.darken-4 {
-    background-color: rgba(33, 33, 33, 1) !important;
-}
+    background-color: rgb(33,33,33) !important;
 }
 
 /*blue grey*/
 .blueGrey {
-    background-color: rgba(96, 125, 139, 1) !important;
+    background-color: rgb(96,125,139) !important;
 }
 .blueGrey.lighten-5 {
-    background-color: rgba(236, 239, 241, 1) !important;
+    background-color: rgb(236,239,241) !important;
 }
 
 .blueGrey.lighten-4 {
-    background-color: rgba(207, 216, 220, 1) !important;
+    background-color: rgb(207,216,220) !important;
 }
 
 .blueGrey.lighten-3 {
-    background-color: rgba(176, 190, 197, 1) !important;
+    background-color: rgb(176,190,197) !important;
 }
 
 .blueGrey.lighten-2 {
-    background-color: rgba(144, 164, 174, 1) !important;
+    background-color: rgb(144,164,174) !important;
 }
 
 .blueGrey.lighten-1 {
-    background-color: rgba(120, 144, 156, 1) !important;
+    background-color: rgb(120,144,156) !important;
 }
 
 .blueGrey.darken-1 {
-    background-color: rgba(84, 110, 122, 1) !important;
+    background-color: rgb(84,110,122) !important;
 }
 
 .blueGrey.darken-2 {
-    background-color: rgba(69, 90, 100, 1) !important;
+    background-color: rgb(69,90,100) !important;
 }
 
 .blueGrey.darken-3 {
-    background-color: rgba(55, 71, 79, 1) !important;
+    background-color: rgb(55,71,79) !important;
 }
 
 .blueGrey.darken-4 {
-    background-color: rgba(38, 50, 56, 1) !important;
+    background-color: rgb(38,50,56) !important;
 }
 
 /* End Color Library */
