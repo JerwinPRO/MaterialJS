@@ -254,6 +254,7 @@ nav {
 .red {
     background-color: rgba(244, 67, 54, 1) !important;
 }
+
 .red.lighten-5 {
     background-color: rgba(255, 235, 238, 1) !important;
 }
@@ -309,6 +310,7 @@ nav {
 .pink {
     background-color: rgba(233, 30, 99, 1) !important;
 }
+
 .pink.lighten-5 {
     background-color: rgba(252, 228, 236, 1) !important;
 }
@@ -419,6 +421,7 @@ nav {
 .deep-purple {
     background-color: rgba(103, 58, 183, 1) !important;
 }
+
 .deep-purple.lighten-5 {
     background-color: rgba(237, 231, 246, 1) !important;
 }
@@ -474,6 +477,7 @@ nav {
 .indigo {
     background-color: rgba(63, 81, 181, 1) !important;
 }
+
 .indigo.lighten-5 {
     background-color: rgba(232, 234, 246, 1) !important;
 }
@@ -529,6 +533,7 @@ nav {
 .blue {
     background-color: rgba(33, 150, 243, 1) !important;
 }
+
 .blue.lighten-5 {
     background-color: rgba(227, 242, 253, 1) !important;
 }
@@ -584,6 +589,7 @@ nav {
 .light-blue {
     background-color: rgba(3, 169, 244, 1) !important;
 }
+
 .light-blue.lighten-5 {
     background-color: rgba(225, 245, 254, 1) !important;
 }
@@ -639,6 +645,7 @@ nav {
 .cyan {
     background-color: rgba(0, 188, 212, 1) !important;
 }
+
 .cyan.lighten-5 {
     background-color: rgba(224, 247, 250, 1) !important;
 }
@@ -694,6 +701,7 @@ nav {
 .teal {
     background-color: rgba(0, 150, 136, 1) !important;
 }
+
 .teal.lighten-5 {
     background-color: rgba(224, 242, 241, 1) !important;
 }
@@ -749,6 +757,7 @@ nav {
 .green {
     background-color: rgba(76, 175, 80, 1) !important;
 }
+
 .green.lighten-5 {
     background-color: rgba(232, 245, 233, 1) !important;
 }
@@ -804,6 +813,7 @@ nav {
 .light-green {
     background-color: rgba(139, 195, 74, 1) !important;
 }
+
 .light-green.lighten-5 {
     background-color: rgba(241, 248, 233, 1) !important;
 }
@@ -859,6 +869,7 @@ nav {
 .lime {
     background-color: rgba(205, 220, 57, 1) !important;
 }
+
 .lime.lighten-5 {
     background-color: rgba(249, 251, 231, 1) !important;
 }
@@ -914,6 +925,7 @@ nav {
 .yellow {
     background-color: rgba(255, 235, 59, 1) !important;
 }
+
 .yellow.lighten-5 {
     background-color: rgba(255, 253, 231, 1) !important;
 }
@@ -969,6 +981,7 @@ nav {
 .amber {
     background-color: rgba(255, 193, 7, 1) !important;
 }
+
 .amber.lighten-5 {
     background-color: rgba(255, 248, 225, 1) !important;
 }
@@ -1024,6 +1037,7 @@ nav {
 .orange {
     background-color: rgba(255, 152, 0, 1) !important;
 }
+
 .orange.lighten-5 {
     background-color: rgba(255, 243, 224, 1) !important;
 }
@@ -1079,6 +1093,7 @@ nav {
 .deep-orange {
     background-color: rgba(255, 87, 34, 1) !important;
 }
+
 .deep-orange.lighten-5 {
     background-color: rgba(251, 233, 231, 1) !important;
 }
@@ -1134,6 +1149,7 @@ nav {
 .brown {
     background-color: rgba(121, 85, 72, 1) !important;
 }
+
 .brown.lighten-5 {
     background-color: rgba(239, 235, 233, 1) !important;
 }
@@ -1212,6 +1228,7 @@ nav {
 .blue-grey {
     background-color: rgba(96, 125, 139, 1) !important;
 }
+
 .blue-grey.lighten-5 {
     background-color: rgba(236, 239, 241, 1) !important;
 }
