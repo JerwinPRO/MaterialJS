@@ -279,7 +279,7 @@
   "darken3": {"hex": "#424242", "rgba": "rgba(33,33,33,1)"},
   "darken4": {"hex": "#212121", "rgba": "rgba(33,33,33,1)"}
   },
-  "": {
+  "blue-grey": {
   "base": {"hex": "#607D8B", "rgba": "rgba(96,125,139,1)"},
   "lighten5": {"hex": "#ECEFF1", "rgba": "rgba(236,239,241,1)"},
   "lighten4": {"hex": "#CFD8DC", "rgba": "rgba(207,216,220,1)"},
