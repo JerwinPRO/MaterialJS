@@ -223,6 +223,38 @@
   "accent3": {"HEX": "#FFC400", "RGB": "rgb(255,196,0)"},
   "accent4": {"HEX": "#FFAB00", "RGB": "rgb(255,171,0)"}
   },
+  "orange": {
+  "base": {"HEX": "#FF9800", "RGB": "rgb(255,152,0)"},
+  "lighten5": {"HEX": "#FFF3E0", "RGB": "rgb(255,243,224)"},
+  "lighten4": {"HEX": "#FFE0B2", "RGB": "rgb(255,224,178)"},
+  "lighten3": {"HEX": "#FFCC80", "RGB": "rgb(255,204,128)"},
+  "lighten2": {"HEX": "#FFB74D", "RGB": "rgb(255,183,77)"},
+  "lighten1": {"HEX": "#FFA726", "RGB": "rgb(255,167,38)"},
+  "darken1": {"HEX": "#FB8C00", "RGB": "rgb(251,140,0)"},
+  "darken2": {"HEX": "#F57C00", "RGB": "rgb(245,124,0)"},
+  "darken3": {"HEX": "#EF6C00", "RGB": "rgb(239,108,0)"},
+  "darken4": {"HEX": "#E65100", "RGB": "rgb(230,81,0)"},
+  "accent1": {"HEX": "#FFD180", "RGB": "rgb(255,209,128)"},
+  "accent2": {"HEX": "#FFAB40", "RGB": "rgb(255,171,64)"},
+  "accent3": {"HEX": "#FF9100", "RGB": "rgb(255,145,0)"},
+  "accent4": {"HEX": "#FF6D00", "RGB": "rgb(255,109,0)"}
+  },
+  "": {
+  "base": {"HEX": "", "RGB": ""},
+  "lighten5": {"HEX": "", "RGB": ""},
+  "lighten4": {"HEX": "", "RGB": ""},
+  "lighten3": {"HEX": "", "RGB": ""},
+  "lighten2": {"HEX": "", "RGB": ""},
+  "lighten1": {"HEX": "", "RGB": ""},
+  "darken1": {"HEX": "", "RGB": ""},
+  "darken2": {"HEX": "", "RGB": ""},
+  "darken3": {"HEX": "", "RGB": ""},
+  "darken4": {"HEX": "", "RGB": ""},
+  "accent1": {"HEX": "", "RGB": ""},
+  "accent2": {"HEX": "", "RGB": ""},
+  "accent3": {"HEX": "", "RGB": ""},
+  "accent4": {"HEX": "", "RGB": ""}
+  },
   "": {
   "base": {"HEX": "", "RGB": ""},
   "lighten5": {"HEX": "", "RGB": ""},

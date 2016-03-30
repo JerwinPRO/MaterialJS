@@ -963,58 +963,58 @@ nav {
 
 /*orange*/
 .orange {
-    background-color: rgba(255, 152, 0, 1) !important;
+    background-color: rgb(255,152,0) !important;
 }
 .orange.lighten-5 {
-    background-color: rgba(255, 243, 224, 1) !important;
+    background-color: rgb(255,243,224) !important;
 }
 
 .orange.lighten-4 {
-    background-color: rgba(255, 224, 178, 1) !important;
+    background-color: rgb(255,224,178) !important;
 }
 
 .orange.lighten-3 {
-    background-color: rgba(255, 204, 128, 1) !important;
+    background-color: rgb(255,204,128) !important;
 }
 
 .orange.lighten-2 {
-    background-color: rgba(255, 183, 77, 1) !important;
+    background-color: rgb(255,183,77) !important;
 }
 
 .orange.lighten-1 {
-    background-color: rgba(255, 167, 38, 1) !important;
+    background-color: rgb(255,167,38) !important;
 }
 
 .orange.darken-1 {
-    background-color: rgba(251, 140, 0, 1) !important;
+    background-color: rgb(251,140,0) !important;
 }
 
 .orange.darken-2 {
-    background-color: rgba(245, 124, 0, 1) !important;
+    background-color: rgb(245,124,0) !important;
 }
 
 .orange.darken-3 {
-    background-color: rgba(239, 108, 0, 1) !important;
+    background-color: rgb(239,108,0) !important;
 }
 
 .orange.darken-4 {
-    background-color: rgba(230, 81, 0, 1) !important;
+    background-color: rgb(230,81,0) !important;
 }
 
 .orange.accent-1 {
-    background-color: rgba(255, 209, 128, 1) !important;
+    background-color: rgb(255,209,128) !important;
 }
 
 .orange.accent-2 {
-    background-color: rgba(255, 171, 64, 1) !important;
+    background-color: rgb(255,171,64) !important;
 }
 
 .orange.accent-3 {
-    background-color: rgba(255, 145, 0, 1) !important;
+    background-color: rgb(255,145,0) !important;
 }
 
 .orange.accent-4 {
-    background-color: rgba(255, 109, 0, 1) !important;
+    background-color: rgb(255,109,0) !important;
 }
 
 /*deep orange*/
