@@ -1,0 +1,22 @@
+{
+    "name": "cm-materialjs",
+    "description": "Express your creativity with Material, an animation and graphics framework for Google's Material Design and Apple's Flat UI in Javascript.",
+    "main": [],
+    "dependencies": {},
+    "devDependencies": {},
+    "moduleType": [
+        "globals"
+    ],
+    "keywords": [
+        "materialdesign",
+        "maeterial",
+        "design"
+    ],
+    "authors": [
+        "CosmicMind <support@cosmicmind.io>"
+    ],
+    "license": "BSD-3-Clause",
+    "ignore": [
+        "**/.*"
+    ]
+}
