@@ -108,6 +108,14 @@ html {
     flex: 1;
 }
 
+.s2 {
+    flex: 2;
+}
+
+.s3 {
+    flex: 3;
+}
+
 .row {
 	width: 100%;
 	display: -webkit-flex;

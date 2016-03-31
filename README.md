@@ -16,6 +16,16 @@ Express your creativity with MaterialJS, an animation and graphics framework for
 
 MaterialJS is a growing project and will encounter changes throughout its development. It is recommended that the [Changelog](https://github.com/CosmicMind/MaterialJS/wiki/Changelog) be reviewed prior to updating versions.
 
+# Explore
+
+<a name="materialcolor"></a>
+#### MaterialColor
+
+MaterialColor is a complete Material Design color library. It uses base color values that expand to a range of lighter and darker shades, with the addition of accents.
+
+![MaterialMaterialColorPalette](http://www.cosmicmind.io/MK/MaterialMaterialColorPalette.png)
+
+
 # License
 
 Copyright (C) 2015 - 2016, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.io>. All rights reserved.
