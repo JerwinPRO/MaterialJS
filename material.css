@@ -82,7 +82,6 @@ body,
 html {
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 .hide {
@@ -97,23 +96,119 @@ html {
 
 /* View Begin */
 
-.grid {
-	width: 100%;
-    height: 100%;
-    display: -webkit-flex;
+row,
+.row {
+	display: -webkit-flex;
 	display: flex;
 }
 
-.s1 {
+column,
+.column {
+    -webkit-flex: 1;
     flex: 1;
 }
 
-.s2 {
+column.space,
+.column.space,
+row.space > column,
+row.space > .column,
+.row.space > column,
+.row.space > .column {
+    margin: 1em;
+}
+
+column + column,
+column + .column,
+.column + column,
+.column + .column {
+    margin-left: 0 !important;
+}
+
+column.pad,
+.column.pad,
+row.pad > column,
+row.pad > .column,
+.row.pad > column,
+.row.pad > .column {
+    padding: 1em;
+}
+
+row.top,
+.row.top {
+    align-items: flex-start;
+}
+
+row.bottom,
+.row.bottom {
+    align-items: flex-end;
+}
+
+row.center,
+.row.center {
+    align-items: center;
+}
+
+column.top,
+.column.top {
+    align-self: flex-start;
+}
+
+column.bottom,
+.column.bottom {
+    align-self: flex-end;
+}
+
+column.center,
+.column.center {
+    align-self: center;
+}
+
+/*.g1 {
+    flex: 1;
+}
+
+.g2 {
     flex: 2;
 }
 
-.s3 {
+.g3 {
     flex: 3;
+}
+
+.g4 {
+    flex: 4;
+}
+
+.g5 {
+    flex: 5;
+}
+
+.g6 {
+    flex: 6;
+}
+
+.g7 {
+    flex: 7;
+}
+
+.g8 {
+    flex: 8;
+}
+
+.g9 {
+    flex: 9;
+}
+
+.g10 {
+    flex: 10;
+}
+
+.g11 {
+    flex: 11;
+}
+
+.g12 {
+    flex: 12;
 }
 
 .row {
@@ -147,7 +242,7 @@ html {
 
 .row > .column {
 	flex: 1 1 auto !important;
-}
+}*/
 
 /* View End */
 
