@@ -21,13 +21,13 @@ MaterialJS is a growing project and will encounter changes throughout its develo
 Using npm.
 
 ```bash
-npm install cm-materialjs
+npm install materialjs
 ```
 
 Using bower.
 
 ```bash
-bower install cm-materialjs
+bower install materialjs
 ```
 
 ## Explore
