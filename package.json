@@ -1,11 +1,11 @@
 {
-    "name": "cm-materialjs",
+    "name": "materialjs",
     "homepage": "http://cosmicmind.io",
     "author": {
         "name": "CosmicMind, Inc.",
         "email": "support@cosmicmind.io"
     },
-    "version": "0.0.7",
+    "version": "0.0.8",
     "license": [{
         "type": "BSD",
         "url": "https://github.com/CosmicMind/MaterialJS/blob/master/LICENSE.md"
