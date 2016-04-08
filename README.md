@@ -39,39 +39,7 @@ MaterialColor is a complete Material Design color library. It uses base color va
 
 ![MaterialMaterialColorPalette](http://www.cosmicmind.io/MK/MaterialMaterialColorPalette.png)
 
-You can use CSS to access the colors. For example:
-
-Setting the background color of an element:
-
-```html
-<div class="blue">
-    <!-- Content -->
-</div>
-```
-
-Setting the background color to a darker shade.
-
-```html
-<div class="blue-grey darken-4">
-    <!-- Content -->
-</div>
-```
-
-Setting the text color to a lighter shade.
-
-```html
-<div class="green-text lighten-3">
-    <!-- Content -->
-</div>
-```
-
-Set the border color.
-
-```html
-<div class="red-border">
-    <!-- Content -->
-</div>
-```
+[Learn More About MaterialColor](https://github.com/CosmicMind/MaterialJS/wiki/MaterialColor).
 
 <a name="materialicon"></a>
 #### MaterialIcon
@@ -80,14 +48,7 @@ MaterialIcon is a library of Google and CosmicMind icons that are available for 
 
 ![MaterialMaterialIcon](http://www.cosmicmind.io/MK/MaterialMaterialIcon.png)
 
-Access icons by setting CSS icon classes.
-
-```html
-<a href="#" class="cm-menu"></a>
-<a href="#" class="cm-pen"></a>
-```
-
-For a complete list of available icons, visit [MaterialIcon](https://github.com/CosmicMind/MaterialJS/wiki/MaterialIcon).
+[Learn More About MaterialIcon](https://github.com/CosmicMind/MaterialJS/wiki/MaterialIcon).
 
 <a name="grid"></a>
 #### Grid
@@ -96,31 +57,16 @@ Grid is a flexible layout tool using rows and columns. A *row* extends horizonta
 
 ![MaterialGrid](http://www.cosmicmind.io/MK/MaterialGrid.png)
 
-```html
-<row style="height:100px;" class="pad space">
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-</row>
-<row style="height:100px;" class="pad space">
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-</row>
-<row style="height:100px;" class="pad space">
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-    <column class="blue blue-text lighten-1 depth-1">1</column>
-</row>
-```
-
 [Learn More About Grid](https://github.com/CosmicMind/MaterialJS/wiki/Grid).
+
+<a name="toolbar"></a>
+#### Toolbar
+
+A Toolbar is an effective method to organize your applications flow.
+
+![MaterialToolbar](http://www.cosmicmind.io/MK/MaterialToolbar.png)
+
+[Learn More About Toolbar](https://github.com/CosmicMind/MaterialJS/wiki/Toolbar).
 
 # License
 
