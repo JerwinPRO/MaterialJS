@@ -24,6 +24,12 @@ Using npm.
 npm install @cosmicmind/materialjs
 ```
 
+Using bower.
+
+```bash
+npm install materialjs
+```
+
 ## Explore
 
 <a name="materialcolor"></a>
