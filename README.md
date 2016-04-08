@@ -27,7 +27,7 @@ npm install @cosmicmind/materialjs
 Using bower.
 
 ```bash
-npm install materialjs
+bower install materialjs
 ```
 
 ## Explore
