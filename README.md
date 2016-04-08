@@ -76,7 +76,7 @@ Set the border color.
 <a name="materialicon"></a>
 #### MaterialIcon
 
-MaterialIcon is a library of Google and CosmicMind icons that are available for use within your iOS applications.
+MaterialIcon is a library of Google and CosmicMind icons that are available for use within your web applications.
 
 ![MaterialMaterialIcon](http://www.cosmicmind.io/MK/MaterialMaterialIcon.png)
 
