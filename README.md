@@ -25,6 +25,47 @@ MaterialColor is a complete Material Design color library. It uses base color va
 
 ![MaterialMaterialColorPalette](http://www.cosmicmind.io/MK/MaterialMaterialColorPalette.png)
 
+You can use CSS to access the colors. For example:
+
+Setting the background color of an element:
+
+```html
+<div class="blue">
+    <!-- Content -->
+</div>
+```
+
+Setting the background color to a darker shade.
+
+```html
+<div class="blue-grey darken-4">
+    <!-- Content -->
+</div>
+```
+
+Setting the text color to a lighter shade.
+
+```html
+<div class="green-text lighten-3">
+    <!-- Content -->
+</div>
+```
+
+<a name="materialicon"></a>
+#### MaterialIcon
+
+MaterialIcon is a library of Google and CosmicMind icons that are available for use within your iOS applications.
+
+![MaterialIcon](http://www.cosmicmind.io/MK/MaterialIcon.png)
+
+Access icons by setting CSS icon classes.
+
+```html
+<a href="#" class="cm-menu"></a>
+<a href="#" class="cm-pen"></a>
+```
+
+For a complete list of available icons, visit [MaterialIcon](https://github.com/CosmicMind/MaterialJS/wiki/MaterialIcon).
 
 # License
 
