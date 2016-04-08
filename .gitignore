@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+.tags*
+prog
+node_modules
+data
+repos
+build
+playground
+npm-debug.log
+bower_components
+gk.db
+materialjs
