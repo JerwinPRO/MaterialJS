@@ -51,12 +51,20 @@ Setting the text color to a lighter shade.
 </div>
 ```
 
+Set the border color.
+
+```html
+<div class="red-border">
+    <!-- Content -->
+</div>
+```
+
 <a name="materialicon"></a>
 #### MaterialIcon
 
 MaterialIcon is a library of Google and CosmicMind icons that are available for use within your iOS applications.
 
-![MaterialIcon](http://www.cosmicmind.io/MK/MaterialIcon.png)
+![MaterialMaterialIcon](http://www.cosmicmind.io/MK/MaterialMaterialIcon.png)
 
 Access icons by setting CSS icon classes.
 
@@ -66,6 +74,37 @@ Access icons by setting CSS icon classes.
 ```
 
 For a complete list of available icons, visit [MaterialIcon](https://github.com/CosmicMind/MaterialJS/wiki/MaterialIcon).
+
+<a name="grid"></a>
+#### Grid
+
+Grid is a flexible layout tool using rows and columns. A *row* extends horizontally to the size of its parent's width, while a *column* expands vertically to its parent's height.
+
+![MaterialGrid](http://www.cosmicmind.io/MK/MaterialGrid.png)
+
+```html
+<row style="height:100px;" class="pad space">
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+</row>
+<row style="height:100px;" class="pad space">
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+</row>
+<row style="height:100px;" class="pad space">
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+    <column class="blue blue-text lighten-1 depth-1">1</column>
+</row>
+```
 
 # License
 
