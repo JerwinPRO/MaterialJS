@@ -21,13 +21,7 @@ MaterialJS is a growing project and will encounter changes throughout its develo
 Using npm.
 
 ```bash
-npm install materialjs
-```
-
-Using bower.
-
-```bash
-bower install materialjs
+npm install @cosmicmind/materialjs
 ```
 
 ## Explore
