@@ -16,7 +16,21 @@ Express your creativity with MaterialJS, an animation and graphics framework for
 
 MaterialJS is a growing project and will encounter changes throughout its development. It is recommended that the [Changelog](https://github.com/CosmicMind/MaterialJS/wiki/Changelog) be reviewed prior to updating versions.
 
-# Explore
+## Installation
+
+Using npm.
+
+```bash
+npm install cm-materialjs
+```
+
+Using bower.
+
+```bash
+bower install cm-materialjs
+```
+
+## Explore
 
 <a name="materialcolor"></a>
 #### MaterialColor
@@ -105,6 +119,8 @@ Grid is a flexible layout tool using rows and columns. A *row* extends horizonta
     <column class="blue blue-text lighten-1 depth-1">1</column>
 </row>
 ```
+
+[Learn More About Grid](https://github.com/CosmicMind/MaterialJS/wiki/Grid).
 
 # License
 
