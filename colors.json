@@ -1,72 +1,218 @@
 {
-    "white": {
-        "hex": "#FFFFFF",
-        "rgba": "rgba(255, 255, 255, 1)"
-    },
-    "black": {
-        "hex": "#000000",
-        "rgba": "rgba(0, 0, 0, 1)"
-    },
-    "clear": {
-        "hex": "#000000",
-        "rgba": "rgba(0, 0, 0, 0)"
-    },
-    "red": {
-        "base": {
-            "hex": "#F44336",
-            "rgba": "rgba(244, 67, 54, 1)"
-        },
-        "lighten5": {
-            "hex": "#FFEBEE",
-            "rgba": "rgba(255, 235, 238, 1)"
-        },
-        "lighten4": {
-            "hex": "#FFCDD2",
-            "rgba": "rgba(255, 205, 210, 1)"
-        },
-        "lighten3": {
-            "hex": "#EF9A9A",
-            "rgba": "rgba(239, 154, 154, 1)"
-        },
-        "lighten2": {
-            "hex": "#E57373",
-            "rgba": "rgba(229, 115, 115, 1)"
-        },
-        "lighten1": {
-            "hex": "#EF5350",
-            "rgba": "rgba(239, 83, 80, 1)"
-        },
-        "darken1": {
-            "hex": "#E53935",
-            "rgba": "rgba(229, 57, 53, 1)"
-        },
-        "darken2": {
-            "hex": "#D32F2F",
-            "rgba": "rgba(211, 47, 47, 1)"
-        },
-        "darken3": {
-            "hex": "#C62828",
-            "rgba": "rgba(198, 40, 40, 1)"
-        },
-        "darken4": {
-            "hex": "#B71C1C",
-            "rgba": "rgba(183, 28, 28, 1)"
-        },
-        "accent1": {
-            "hex": "#FF8A80",
-            "rgba": "rgba(255, 138, 128, 1)"
-        },
-        "accent2": {
-            "hex": "#FF5252",
-            "rgba": "rgba(255, 82, 82, 1)"
-        },
-        "accent3": {
-            "hex": "#FF1744",
-            "rgba": "rgba(255, 23, 68, 1)"
-        },
-        "accent4": {
-            "hex": "#D50000",
-            "rgba": "rgba(213, 0, 0, 1)"
-        }
-    }
+  "red": {
+      "base": {"rgb": "rgb(244, 67, 54)", "hex": "#f44336", "code": 500},
+      "lighten5": {"rgb": "rgb(255, 235, 238)", "hex": "#ffebee", "code": 50},
+      "lighten4": {"rgb": "rgb(255, 205, 210)", "hex": "#ffcdd2", "code": 100},
+      "lighten3": {"rgb": "rgb(239, 154, 154)", "hex": "#ef9a9a", "code": 200},
+      "lighten2": {"rgb": "rgb(229, 115, 115)", "hex": "#e57373", "code": 300},
+      "lighten1": {"rgb": "rgb(239, 83, 80)", "hex": "#ef5350", "code": 400},
+      "darken1": {"rgb": "rgb(229, 57, 53)", "hex": "#e53935", "code": 600},
+      "darken2": {"rgb": "rgb(211, 47, 47)", "hex": "#d32f2f", "code": 700},
+      "darken3": {"rgb": "rgb(198, 40, 40)", "hex": "#c62828", "code": 800},
+      "darken4": {"rgb": "rgb(183, 28, 28)", "hex": "#b71c1c", "code": 900}
+  },
+  "pink": {
+      "base": {"rgb": "rgb(233, 30, 99)", "hex": "#e91e63", "code": 500},
+      "lighten5": {"rgb": "rgb(252, 228, 236)", "hex": "#fce4ec", "code": 50},
+      "lighten4": {"rgb": "rgb(248, 187, 208)", "hex": "#f8bbd0", "code": 100},
+      "lighten3": {"rgb": "rgb(244, 143, 177)", "hex": "#f48fb1", "code": 200},
+      "lighten2": {"rgb": "rgb(240, 98, 146)", "hex": "#f06292", "code": 300},
+      "lighten1": {"rgb": "rgb(236, 64, 122)", "hex": "#ec407a", "code": 400},
+      "darken1": {"rgb": "rgb(216, 27, 96)", "hex": "#d81b60", "code": 600},
+      "darken2": {"rgb": "rgb(194, 24, 91)", "hex": "#c2185b", "code": 700},
+      "darken3": {"rgb": "rgb(173, 20, 87)", "hex": "#ad1457", "code": 800},
+      "darken4": {"rgb": "rgb(136, 14, 79)", "hex": "#880e4f", "code": 900}
+  },
+  "purple": {
+      "base": {"rgb": "rgb(156, 39, 176)", "hex": "#9c27b0", "code": 500},
+      "lighten5": {"rgb": "rgb(243, 229, 245)", "hex": "#f3e5f5", "code": 50},
+      "lighten4": {"rgb": "rgb(225, 190, 231)", "hex": "#e1bee7", "code": 100},
+      "lighten3": {"rgb": "rgb(206, 147, 216)", "hex": "#ce93d8", "code": 200},
+      "lighten2": {"rgb": "rgb(186, 104, 200)", "hex": "#ba68c8", "code": 300},
+      "lighten1": {"rgb": "rgb(171, 71, 188)", "hex": "#ab47bc", "code": 400},
+      "darken1": {"rgb": "rgb(142, 36, 170)", "hex": "#8e24aa", "code": 600},
+      "darken2": {"rgb": "rgb(123, 31, 162)", "hex": "#7b1fa2", "code": 700},
+      "darken3": {"rgb": "rgb(106, 27, 154)", "hex": "#6a1b9a", "code": 800},
+      "darken4": {"rgb": "rgb(74, 20, 140)", "hex": "#4a148c", "code": 900}
+  },
+ "deep-purple": {
+     "base": {"rgb": "rgb(103, 58, 183)", "hex": "#673ab7", "code": 500},
+     "lighten5": {"rgb": "rgb(237, 231, 246)", "hex": "#ede7f6", "code": 50},
+     "lighten4": {"rgb": "rgb(209, 196, 233)", "hex": "#d1c4e9", "code": 100},
+     "lighten3": {"rgb": "rgb(179, 157, 219)", "hex": "#b39ddb", "code": 200},
+     "lighten2": {"rgb": "rgb(149, 117, 205)", "hex": "#9575cd", "code": 300},
+     "lighten1": {"rgb": "rgb(126, 87, 194)", "hex": "#7e57c2", "code": 400},
+     "darken1": {"rgb": "rgb(94, 53, 177)", "hex": "#5e35b1", "code": 600},
+     "darken2": {"rgb": "rgb(81, 45, 168)", "hex": "#512da8", "code": 700},
+     "darken3": {"rgb": "rgb(69, 39, 160)", "hex": "#4527a0", "code": 800},
+     "darken4": {"rgb": "rgb(49, 27, 146)", "hex": "#311b92", "code": 900}
+ },
+ "indigo": {
+     "base": {"rgb": "rgb(63, 81, 181)", "hex": "#3f51b5", "code": 500},
+     "lighten5": {"rgb": "rgb(232, 234, 246)", "hex": "#e8eaf6", "code": 50},
+     "lighten4": {"rgb": "rgb(197, 202, 233)", "hex": "#c5cae9", "code": 100},
+     "lighten3": {"rgb": "rgb(159, 168, 218)", "hex": "#9fa8da", "code": 200},
+     "lighten2": {"rgb": "rgb(121, 134, 203)", "hex": "#7986cb", "code": 300},
+     "lighten1": {"rgb": "rgb(92, 107, 192)", "hex": "#5c6bc0", "code": 400},
+     "darken1": {"rgb": "rgb(57, 73, 171)", "hex": "#3949ab", "code": 600},
+     "darken2": {"rgb": "rgb(48, 63, 159)", "hex": "#303f9f", "code": 700},
+     "darken3": {"rgb": "rgb(40, 53, 147)", "hex": "#283593", "code": 800},
+     "darken4": {"rgb": "rgb(26, 35, 126)", "hex": "#1a237e", "code": 900}
+ },
+ "blue": {
+     "base": {"rgb": "rgb(33, 150, 243)", "hex": "#2196f3", "code": 500},
+     "lighten5": {"rgb": "rgb(227, 242, 253)", "hex": "#e3f2fd", "code": 50},
+     "lighten4": {"rgb": "rgb(187, 222, 251)", "hex": "#bbdefb", "code": 100},
+     "lighten3": {"rgb": "rgb(144, 202, 249)", "hex": "#90caf9", "code": 200},
+     "lighten2": {"rgb": "rgb(100, 181, 246)", "hex": "#64b5f6", "code": 300},
+     "lighten1": {"rgb": "rgb(66, 165, 245)", "hex": "#42a5f5", "code": 400},
+     "darken1": {"rgb": "rgb(30, 136, 229)", "hex": "#1e88e5", "code": 600},
+     "darken2": {"rgb": "rgb(25, 118, 210)", "hex": "#1976d2", "code": 700},
+     "darken3": {"rgb": "rgb(21, 101, 192)", "hex": "#1565c0", "code": 800},
+     "darken4": {"rgb": "rgb(13, 71, 161)", "hex": "#0d47a1", "code": 900}
+ },
+ "light-blue": {
+     "base": {"rgb": "rgb(3, 169, 244)", "hex": "#03a9f4", "code": 500},
+     "lighten5": {"rgb": "rgb(225, 245, 254)", "hex": "#e1f5fe", "code": 50},
+     "lighten4": {"rgb": "rgb(179, 229, 252)", "hex": "#b3e5fc", "code": 100},
+     "lighten3": {"rgb": "rgb(129, 212, 250)", "hex": "#81d4fa", "code": 200},
+     "lighten2": {"rgb": "rgb(79, 195, 247)", "hex": "#4fc3f7", "code": 300},
+     "lighten1": {"rgb": "rgb(41, 182, 246)", "hex": "#29b6f6", "code": 400},
+     "darken1": {"rgb": "rgb(3, 155, 229)", "hex": "#039be5", "code": 600},
+     "darken2": {"rgb": "rgb(2, 136, 209)", "hex": "#0288d1", "code": 700},
+     "darken3": {"rgb": "rgb(2, 119, 189)", "hex": "#0277bd", "code": 800},
+     "darken4": {"rgb": "rgb(1, 87, 155)", "hex": "#01579b", "code": 900}
+ },
+ "teal": {
+     "base": {"rgb": "rgb(0, 150, 136)", "hex": "#009688", "code": 500},
+     "lighten5": {"rgb": "rgb(224, 242, 241)", "hex": "#e0f2f1", "code": 50},
+     "lighten4": {"rgb": "rgb(178, 223, 219)", "hex": "#b2dfdb", "code": 100},
+     "lighten3": {"rgb": "rgb(128, 203, 196)", "hex": "#80cbc4", "code": 200},
+     "lighten2": {"rgb": "rgb(77, 182, 172)", "hex": "#4db6ac", "code": 300},
+     "lighten1": {"rgb": "rgb(38, 166, 154)", "hex": "#26a69a", "code": 400},
+     "darken1": {"rgb": "rgb(0, 137, 123)", "hex": "#00897b", "code": 600},
+     "darken2": {"rgb": "rgb(0, 121, 107)", "hex": "#00796b", "code": 700},
+     "darken3": {"rgb": "rgb(0, 105, 92)", "hex": "#00695c", "code": 800},
+     "darken4": {"rgb": "rgb(0, 77, 64)", "hex": "#004d40", "code": 900}
+ },
+ "green": {
+     "base": {"rgb": "rgb(76, 175, 80)", "hex": "#4caf50", "code": 500},
+     "lighten5": {"rgb": "rgb(232, 245, 233)", "hex": "#e8f5e9", "code": 50},
+     "lighten4": {"rgb": "rgb(200, 230, 201)", "hex": "#c8e6c9", "code": 100},
+     "lighten3": {"rgb": "rgb(165, 214, 167)", "hex": "#a5d6a7", "code": 200},
+     "lighten2": {"rgb": "rgb(129, 199, 132)", "hex": "#81c784", "code": 300},
+     "lighten1": {"rgb": "rgb(102, 187, 106)", "hex": "#66bb6a", "code": 400},
+     "darken1": {"rgb": "rgb(67, 160, 71)", "hex": "#43a047", "code": 600},
+     "darken2": {"rgb": "rgb(56, 142, 60)", "hex": "#388e3c", "code": 700},
+     "darken3": {"rgb": "rgb(46, 125, 50)", "hex": "#2e7d32", "code": 800},
+     "darken4": {"rgb": "rgb(27, 94, 32)", "hex": "#1b5e20", "code": 900}
+ },
+ "light-green": {
+     "base": {"rgb": "rgb(139, 195, 74)", "hex": "#8bc34a", "code": 500},
+     "lighten5": {"rgb": "rgb(241, 248, 233)", "hex": "#f1f8e9", "code": 50},
+     "lighten4": {"rgb": "rgb(220, 237, 200)", "hex": "#dcedc8", "code": 100},
+     "lighten3": {"rgb": "rgb(197, 225, 165)", "hex": "#c5e1a5", "code": 200},
+     "lighten2": {"rgb": "rgb(174, 213, 129)", "hex": "#aed581", "code": 300},
+     "lighten1": {"rgb": "rgb(156, 204, 101)", "hex": "#9ccc65", "code": 400},
+     "darken1": {"rgb": "rgb(124, 179, 66)", "hex": "#7cb342", "code": 600},
+     "darken2": {"rgb": "rgb(104, 159, 56)", "hex": "#689f38", "code": 700},
+     "darken3": {"rgb": "rgb(85, 139, 47)", "hex": "#558b2f", "code": 800},
+     "darken4": {"rgb": "rgb(51, 105, 30)", "hex": "#33691e", "code": 900}
+ },
+ "lime": {
+     "base": {"rgb": "rgb(205, 220, 57)", "hex": "#cddc39", "code": 500},
+     "lighten5": {"rgb": "rgb(249, 251, 231)", "hex": "#f9fbe7", "code": 50},
+     "lighten4": {"rgb": "rgb(240, 244, 195)", "hex": "#f0f4c3", "code": 100},
+     "lighten3": {"rgb": "rgb(230, 238, 156)", "hex": "#e6ee9c", "code": 200},
+     "lighten2": {"rgb": "rgb(220, 231, 117)", "hex": "#dce775", "code": 300},
+     "lighten1": {"rgb": "rgb(212, 225, 87)", "hex": "#d4e157", "code": 400},
+     "darken1": {"rgb": "rgb(192, 202, 51)", "hex": "#c0ca33", "code": 600},
+     "darken2": {"rgb": "rgb(175, 180, 43)", "hex": "#afb42b", "code": 700},
+     "darken3": {"rgb": "rgb(158, 157, 36)", "hex": "#9e9d24", "code": 800},
+     "darken4": {"rgb": "rgb(130, 119, 23)", "hex": "#827717", "code": 900}
+ },
+ "yellow": {
+     "base": {"rgb": "rgb(255, 235, 59)", "hex": "#ffeb3b", "code": 500},
+     "lighten5": {"rgb": "rgb(255, 253, 231)", "hex": "#fffde7", "code": 50},
+     "lighten4": {"rgb": "rgb(255, 249, 196)", "hex": "#fff9c4", "code": 100},
+     "lighten3": {"rgb": "rgb(255, 245, 157)", "hex": "#fff59d", "code": 200},
+     "lighten2": {"rgb": "rgb(255, 241, 118)", "hex": "#fff176", "code": 300},
+     "lighten1": {"rgb": "rgb(255, 238, 88)", "hex": "#ffee58", "code": 400},
+     "darken1": {"rgb": "rgb(253, 216, 53)", "hex": "#fdd835", "code": 600},
+     "darken2": {"rgb": "rgb(251, 192, 45)", "hex": "#fbc02d", "code": 700},
+     "darken3": {"rgb": "rgb(249, 168, 37)", "hex": "#f9a825", "code": 800},
+     "darken4": {"rgb": "rgb(245, 127, 23)", "hex": "#f57f17", "code": 900}
+ },
+ "amber": {
+     "base": {"rgb": "rgb(255, 193, 7)", "hex": "#ffc107", "code": 500},
+     "lighten5": {"rgb": "rgb(255, 248, 225)", "hex": "#fff8e1", "code": 50},
+     "lighten4": {"rgb": "rgb(255, 236, 179)", "hex": "#ffecb3", "code": 100},
+     "lighten3": {"rgb": "rgb(255, 224, 130)", "hex": "#ffe082", "code": 200},
+     "lighten2": {"rgb": "rgb(255, 213, 79)", "hex": "#ffd54f", "code": 300},
+     "lighten1": {"rgb": "rgb(255, 202, 40)", "hex": "#ffca28", "code": 400},
+     "darken1": {"rgb": "rgb(255, 179, 0)", "hex": "#ffb300", "code": 600},
+     "darken2": {"rgb": "rgb(255, 160, 0)", "hex": "#ffa000", "code": 700},
+     "darken3": {"rgb": "rgb(255, 143, 0)", "hex": "#ff8f00", "code": 800},
+     "darken4": {"rgb": "rgb(255, 111, 0)", "hex": "#ff6f00", "code": 900}
+ },
+ "orange": {
+     "base": {"rgb": "rgb(255, 152, 0)", "hex": "#ff9800", "code": 500},
+     "lighten5": {"rgb": "rgb(255, 243, 224)", "hex": "#fff3e0", "code": 50},
+     "lighten4": {"rgb": "rgb(255, 224, 178)", "hex": "#ffe0b2", "code": 100},
+     "lighten3": {"rgb": "rgb(255, 204, 128)", "hex": "#ffcc80", "code": 200},
+     "lighten2": {"rgb": "rgb(255, 183, 77)", "hex": "#ffb74d", "code": 300},
+     "lighten1": {"rgb": "rgb(255, 167, 38)", "hex": "#ffa726", "code": 400},
+     "darken1": {"rgb": "rgb(251, 140, 0)", "hex": "#fb8c00", "code": 600},
+     "darken2": {"rgb": "rgb(245, 124, 0)", "hex": "#f57c00", "code": 700},
+     "darken3": {"rgb": "rgb(239, 108, 0)", "hex": "#ef6c00", "code": 800},
+     "darken4": {"rgb": "rgb(230, 81, 0)", "hex": "#e65100", "code": 900}
+ },
+ "deep-orange": {
+     "base": {"rgb": "rgb(255, 87, 34)", "hex": "#ff5722", "code": 500},
+     "lighten5": {"rgb": "rgb(251, 233, 231)", "hex": "#fbe9e7", "code": 50},
+     "lighten4": {"rgb": "rgb(255, 204, 188)", "hex": "#ffccbc", "code": 100},
+     "lighten3": {"rgb": "rgb(255, 171, 145)", "hex": "#ffab91", "code": 200},
+     "lighten2": {"rgb": "rgb(255, 138, 101)", "hex": "#ff8a65", "code": 300},
+     "lighten1": {"rgb": "rgb(255, 112, 67)", "hex": "#ff7043", "code": 400},
+     "darken1": {"rgb": "rgb(244, 81, 30)", "hex": "#f4511e", "code": 600},
+     "darken2": {"rgb": "rgb(230, 74, 25)", "hex": "#e64a19", "code": 700},
+     "darken3": {"rgb": "rgb(216, 67, 21)", "hex": "#d84315", "code": 800},
+     "darken4": {"rgb": "rgb(191, 54, 12)", "hex": "#bf360c", "code": 900}
+ },
+ "brown": {
+     "base": {"rgb": "rgb(121, 85, 72)", "hex": "#795548", "code": 500},
+     "lighten5": {"rgb": "rgb(239, 235, 233)", "hex": "#efebe9", "code": 50},
+     "lighten4": {"rgb": "rgb(215, 204, 200)", "hex": "#d7ccc8", "code": 100},
+     "lighten3": {"rgb": "rgb(188, 170, 164)", "hex": "#bcaaa4", "code": 200},
+     "lighten2": {"rgb": "rgb(161, 136, 127)", "hex": "#a1887f", "code": 300},
+     "lighten1": {"rgb": "rgb(141, 110, 99)", "hex": "#8d6e63", "code": 400},
+     "darken1": {"rgb": "rgb(109, 76, 65)", "hex": "#6d4c41", "code": 600},
+     "darken2": {"rgb": "rgb(93, 64, 55)", "hex": "#5d4037", "code": 700},
+     "darken3": {"rgb": "rgb(78, 52, 46)", "hex": "#4e342e", "code": 800},
+     "darken4": {"rgb": "rgb(62, 39, 35)", "hex": "#3e2723", "code": 900}
+ },
+ "grey": {
+     "base": {"rgb": "rgb(158, 158, 158)", "hex": "#9e9e9e", "code": 500},
+     "lighten5": {"rgb": "rgb(250, 250, 250)", "hex": "#fafafa", "code": 50},
+     "lighten4": {"rgb": "rgb(245, 245, 245)", "hex": "#f5f5f5", "code": 100},
+     "lighten3": {"rgb": "rgb(238, 238, 238)", "hex": "#eeeeee", "code": 200},
+     "lighten2": {"rgb": "rgb(224, 224, 224)", "hex": "#e0e0e0", "code": 300},
+     "lighten1": {"rgb": "rgb(189, 189, 189)", "hex": "#bdbdbd", "code": 400},
+     "darken1": {"rgb": "rgb(117, 117, 117)", "hex": "#757575", "code": 600},
+     "darken2": {"rgb": "rgb(97, 97, 97)", "hex": "#616161", "code": 700},
+     "darken3": {"rgb": "rgb(66, 66, 66)", "hex": "#424242", "code": 800},
+     "darken4": {"rgb": "rgb(33, 33, 33)", "hex": "#212121", "code": 900}
+ },
+ "blue-grey": {
+     "base": {"rgb": "rgb(96, 125, 139)", "hex": "#607d8b", "code": 500},
+     "lighten5": {"rgb": "rgb(236, 239, 241)", "hex": "#eceff1", "code": 50},
+     "lighten4": {"rgb": "rgb(207, 216, 220)", "hex": "#cfd8dc", "code": 100},
+     "lighten3": {"rgb": "rgb(176, 190, 197)", "hex": "#b0bec5", "code": 200},
+     "lighten2": {"rgb": "rgb(144, 164, 174)", "hex": "#90a4ae", "code": 300},
+     "lighten1": {"rgb": "rgb(120, 144, 156)", "hex": "#78909c", "code": 400},
+     "darken1": {"rgb": "rgb(84, 110, 122)", "hex": "#546e7a", "code": 600},
+     "darken2": {"rgb": "rgb(69, 90, 100)", "hex": "#455a64", "code": 700},
+     "darken3": {"rgb": "rgb(55, 71, 79)", "hex": "#37474f", "code": 800},
+     "darken4": {"rgb": "rgb(38, 50, 56)", "hex": "#263238", "code": 900}
+ }
 }

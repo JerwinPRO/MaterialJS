@@ -147,73 +147,6 @@
 			_regExpMozilla = /(mozilla)(?:.*? rv:([\w.]+))?/gi,
 
 			/*
-			@note	Elements allowed to be used with AjaxScript.
-			*/
-			_allowableElements = function ( type )
-			{
-				var elements =
-					{
-						img : 'img',
-						script : 'script',
-						style : 'style',
-						ul : 'ul',
-						li : 'li',
-						a : 'a',
-						div : 'div',
-						span : 'span',
-						p : 'p',
-						label : 'label',
-						input : 'input',
-						textarea : 'textarea',
-						head : 'head',
-						select : 'select',
-						form : 'form',
-						option : 'option',
-						iframe : 'iframe',
-						link : 'link',
-						title : 'title'
-					};
-
-					return type ? elements[ type ] : elements;
-			},
-
-			/*
-			@note	Events allows to be used with AjaxScript.
-			*/
-			_allowableEvents = function ( type )
-			{
-				var events =
-					{
-						DOMContentLoaded : true,
-						orientationchange : true,
-						touchstart : true,
-						touchmove : true,
-						touchend : true,
-						gesturestart : true,
-						gesturechange : true,
-						gestureend : true,
-						click : true,
-						dblclick : true,
-						submit : true,
-						load : true,
-						change : true,
-						keyup : true,
-						keydown : true,
-						keypress : true,
-						mouseup : true,
-						mousedown : true,
-						mouseover : true,
-						mouseout : true,
-						mousemove : true,
-						focus : true,
-						blur : true,
-						message : true
-					};
-
-					return type ? events[ type ] : events;
-			},
-
-			/*
 			@note	Cross platform event adjustments made here to give compatability across all major browsers.
 			*/
 			_eventFormat = function ( event )
@@ -1564,14 +1497,11 @@
 									/*
 									@note	Only recongnizable elements will be processed.
 									*/
-									if ( _allowableElements( selector ) )
-									{
-										self.selector = selector;
-										self.context = context ? _$( context )[ 0 ] : document;
-										self[ 0 ] = null;
+									self.selector = selector;
+									self.context = context ? _$( context )[ 0 ] : document;
+									self[ 0 ] = null;
 
-										self.merge( self.context.getElementsByTagName( selector ) );
-									}
+									self.merge( self.context.getElementsByTagName( selector ) );
 								}
 
 								/*
@@ -1704,7 +1634,7 @@
 						element = self[ 0 ],
 						listener = '$listener_' + type;
 
-						if ( element && _allowableEvents( type ) )
+						if ( element )
 						{
 							/*
 							@note	If the element already has the listener, attach the handler ( s ) to it.
@@ -1764,7 +1694,7 @@
 					var self = this,
 						element = self[ 0 ];
 
-						if ( element && _allowableEvents( type ) )
+						if ( element )
 						{
 							var handlers = ( self[ 0 ][ 'listeners' ] || '' ).split( ' ' ),
 								i = handlers.length - 1;
@@ -2847,7 +2777,7 @@
 			{
 				tag = tag.toLowerCase();
 
-				var d = _$( document.createElement( _allowableElements( tag ) || 'div' ) ),
+				var d = _$( document.createElement( tag || 'div' ) ),
 					m,
 					n;
 
