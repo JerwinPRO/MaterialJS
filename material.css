@@ -191,54 +191,54 @@ column.center,
     align-self: center;
 }
 
-/*.g1 {
+.s1 {
     flex: 1;
 }
 
-.g2 {
+.s2 {
     flex: 2;
 }
 
-.g3 {
+.s3 {
     flex: 3;
 }
 
-.g4 {
+.s4 {
     flex: 4;
 }
 
-.g5 {
+.s5 {
     flex: 5;
 }
 
-.g6 {
+.s6 {
     flex: 6;
 }
 
-.g7 {
+.s7 {
     flex: 7;
 }
 
-.g8 {
+.s8 {
     flex: 8;
 }
 
-.g9 {
+.s9 {
     flex: 9;
 }
 
-.g10 {
+.s10 {
     flex: 10;
 }
 
-.g11 {
+.s11 {
     flex: 11;
 }
 
-.g12 {
+.s12 {
     flex: 12;
 }
-
+/*
 .row {
 	width: 100%;
 	display: -webkit-flex;
