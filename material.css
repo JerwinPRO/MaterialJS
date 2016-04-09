@@ -304,19 +304,19 @@ column.center,
 }
 
 .border-radius-2 {
-    border-radius: 2px;
-}
-
-.border-radius-3 {
     border-radius: 3px;
 }
 
+.border-radius-3 {
+    border-radius: 5px;
+}
+
 .border-radius-4 {
-    border-radius: 4px;
+    border-radius: 7px;
 }
 
 .border-radius-5 {
-    border-radius: 5px;
+    border-radius: 9px;
 }
 
 /* Border End */
@@ -332,19 +332,19 @@ column.center,
 }
 
 .depth-2 {
-    box-shadow: 0 0.5px 6px rgba(158, 158, 158, 1) !important;
+    box-shadow: 0 0.5px 8px rgba(158, 158, 158, 1) !important;
 }
 
 .depth-3 {
-    box-shadow: 0 0.75px 6px rgba(158, 158, 158, 1) !important;
+    box-shadow: 0 0.75px 10px rgba(158, 158, 158, 1) !important;
 }
 
 .depth-4 {
-    box-shadow: 0 1px 8px rgba(158, 158, 158, 1) !important;
+    box-shadow: 0 1px 12px rgba(158, 158, 158, 1) !important;
 }
 
 .depth-5 {
-    box-shadow: 0 1.25px 10px rgba(158, 158, 158, 1) !important;
+    box-shadow: 0 1.25px 14px rgba(158, 158, 158, 1) !important;
 }
 
 /* Depth End */
