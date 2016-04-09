@@ -167,7 +167,7 @@ Add padding.
 
 Use the CSS depth classes to visualize hierarchy on the Z index.
 
-![MaterialMaterialDepth](http://www.cosmicmind.io/MK/MaterialMaterialDepth.png)
+![MaterialDepth](http://www.cosmicmind.io/MK/MaterialDepth.png)
 
 ```html
 <div class="depth-0"><!-- Content --></div>
@@ -185,7 +185,7 @@ Use the CSS depth classes to visualize hierarchy on the Z index.
 
 Use the border radius CSS classes to apply rounded corners on elements.
 
-![MaterialMaterialBorderRadius](http://www.cosmicmind.io/MK/MaterialMaterialBorderRadius.png)
+![MaterialBorderRadius](http://www.cosmicmind.io/MK/MaterialBorderRadius.png)
 
 ```html
 <div class="border-radius-0"><!-- Content --></div>
