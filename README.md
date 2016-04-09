@@ -35,9 +35,28 @@ bower install materialjs
 <a name="materialcolor"></a>
 #### MaterialColor
 
-MaterialColor is a complete Material Design color library. It uses base color values that expand to a range of lighter and darker shades, with the addition of accents.
+MaterialColor is a complete Material Design color library available in CSS and Javascript. It uses base color values that expand to a range of lighter and darker shades, with the addition of accents.
 
 ![MaterialMaterialColorPalette](http://www.cosmicmind.io/MK/MaterialMaterialColorPalette.png)
+
+To use the JSON library, require the materialjs package:
+
+```javascript
+var materialjs = require('@cosmicmind/materialjs');
+var colors = materialjs.colors;
+
+// Access the colors.
+var rgb = colors.blue.darken4.rgb;
+var hex = colors.blue.darken4.hex;
+var code = colors.blue.darken4.code;
+```
+
+To use the CSS library, add the material.css file:
+
+```html
+<link type="text/css" rel="stylesheet" media="all" href="http://cdn.cosmicmind.io/materialjs/material.min.css">
+
+```
 
 [Learn More About MaterialColor](https://github.com/CosmicMind/MaterialJS/wiki/MaterialColor).
 
