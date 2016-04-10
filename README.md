@@ -143,7 +143,7 @@ Use classes.
 Add spacing.
 
 ```html
-<row class="row space">
+<row class="space">
     <column><!-- Content --></column>
     <column><!-- Content --></column>
     <column><!-- Content --></column>
@@ -153,7 +153,7 @@ Add spacing.
 Add padding.
 
 ```html
-<row class="row pad">
+<row class="pad">
     <column><!-- Content --></column>
     <column><!-- Content --></column>
     <column><!-- Content --></column>
