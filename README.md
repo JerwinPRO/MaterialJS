@@ -143,21 +143,21 @@ Use classes.
 Add spacing.
 
 ```html
-<div class="row space">
-    <div class="column"><!-- Content --></div>
-    <div class="column"><!-- Content --></div>
-    <div class="column"><!-- Content --></div>
-</div>
+<row class="row space">
+    <column><!-- Content --></column>
+    <column><!-- Content --></column>
+    <column><!-- Content --></column>
+</row>
 ```
 
 Add padding.
 
 ```html
-<div class="row pad">
-    <div class="column"><!-- Content --></div>
-    <div class="column"><!-- Content --></div>
-    <div class="column"><!-- Content --></div>
-</div>
+<row class="row pad">
+    <column><!-- Content --></column>
+    <column><!-- Content --></column>
+    <column><!-- Content --></column>
+</row>
 ```
 
 [Learn More About Grid](https://github.com/CosmicMind/MaterialJS/wiki/Grid).
