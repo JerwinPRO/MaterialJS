@@ -30,12 +30,22 @@ Using bower.
 bower install cosmicmind-materialjs
 ```
 
+## Quick Access  
+
+* [Colors](#colors)
+* [Icons](#icons)
+* [Grid](#grid)
+* [Depth](#depth)
+* [Border Radius](#borderradius)
+* [Shapes](#shapes)
+* [Toolbar](#toolbar)
+
 ## Explore
 
-<a name="materialcolor"></a>
-#### MaterialColor
+<a name="colors"></a>
+#### Colors
 
-MaterialColor is a complete Material Design color library available in CSS and Javascript. It uses base color values that expand to a range of lighter and darker shades, with the addition of accents.
+Material has a complete Material Design color library available in CSS and Javascript. It uses base color values that expand to a range of lighter and darker shades, with the addition of accents.
 
 ![MaterialMaterialColorPalette](http://www.cosmicmind.io/MK/MaterialMaterialColorPalette.png)
 
@@ -90,12 +100,12 @@ Set the border color.
 </div>
 ```
 
-[Learn More About MaterialColor](https://github.com/CosmicMind/MaterialJS/wiki/MaterialColor).
+[Learn More About Colors](https://github.com/CosmicMind/MaterialJS/wiki/Colors).
 
-<a name="materialicon"></a>
-#### MaterialIcon
+<a name="icons"></a>
+#### Icons
 
-MaterialIcon is a library of Google and CosmicMind icons that are available for use within your web applications.
+Material comes with a library of icons that are available for use within your web applications.
 
 ![MaterialMaterialIcon](http://www.cosmicmind.io/MK/MaterialMaterialIcon.png)
 
@@ -111,7 +121,7 @@ Use icons with anchors.
 <a href="#" class="cm-search" />
 ```
 
-[Learn More About MaterialIcon](https://github.com/CosmicMind/MaterialJS/wiki/MaterialIcon).
+[Learn More About Icons](https://github.com/CosmicMind/MaterialJS/wiki/Icons).
 
 <a name="grid"></a>
 #### Grid
@@ -170,7 +180,6 @@ Use the CSS depth classes to visualize hierarchy on the Z index.
 ![MaterialDepth](http://www.cosmicmind.io/MK/MaterialDepth.png)
 
 ```html
-<div class="depth-0"><!-- Content --></div>
 <div class="depth-1"><!-- Content --></div>
 <div class="depth-2"><!-- Content --></div>
 <div class="depth-3"><!-- Content --></div>
@@ -188,7 +197,6 @@ Use the border radius CSS classes to apply rounded corners on elements.
 ![MaterialBorderRadius](http://www.cosmicmind.io/MK/MaterialBorderRadius.png)
 
 ```html
-<div class="border-radius-0"><!-- Content --></div>
 <div class="border-radius-1"><!-- Content --></div>
 <div class="border-radius-2"><!-- Content --></div>
 <div class="border-radius-3"><!-- Content --></div>
@@ -197,6 +205,33 @@ Use the border radius CSS classes to apply rounded corners on elements.
 ```
 
 [Learn More About Border Radius](https://github.com/CosmicMind/MaterialJS/wiki/Border Radius).
+
+<a name="shapes"></a>
+#### Shapes
+
+Shape helper classes are available in CSS to simplify making circles and squares.
+
+![MaterialShape](http://www.cosmicmind.io/MK/MaterialShape.png)
+
+```html
+<row class="space pad">
+      <column class="circle red">
+        <div class="content"><!-- Content --></div>
+      </column>
+      <column class="square pink">
+        <div class="content"><!-- Content --></div>
+      </column>
+      <column class="circle purple">
+        <div class="content"><!-- Content --></div>
+      </column>
+      <!-- ... -->
+      <column class="square blue-grey">
+        <div class="content"><!-- Content --></div>
+      </column>
+</row>
+```
+
+[Learn More About Shapes](https://github.com/CosmicMind/MaterialJS/wiki/Shapes).
 
 <a name="toolbar"></a>
 #### Toolbar

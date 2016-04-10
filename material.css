@@ -107,6 +107,44 @@ html {
     visibility: visible;
 }
 
+/* Shape Begin */
+
+.circle {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.square {
+    -moz-border-radius: none;
+	-webkit-border-radius: none;
+	border-radius: none;
+}
+
+.circle,
+.square {
+    position: relative;
+	width: 100%;
+    overflow: hidden;
+}
+
+.circle:before,
+.square:before {
+    content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.content {
+    position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+    right: 0;
+}
+
+/* Shape End */
+
 /* Grid Begin */
 
 row,
@@ -163,79 +201,97 @@ row.pad > .column,
 
 row.top,
 .row.top {
+    -webkit-align-items: flex-start;
     align-items: flex-start;
 }
 
 row.bottom,
 .row.bottom {
+    -webkit-align-items: flex-end;
     align-items: flex-end;
 }
 
 row.center,
 .row.center {
+    -webkit-align-items: center;
     align-items: center;
 }
 
 column.top,
 .column.top {
+    -webkit-align-self: flex-start;
     align-self: flex-start;
 }
 
 column.bottom,
 .column.bottom {
+    -webkit-align-self: flex-end;
     align-self: flex-end;
 }
 
 column.center,
 .column.center {
+    -webkit-align-self: center;
     align-self: center;
 }
 
 .s1 {
+    -webkit-flex: 1;
     flex: 1;
 }
 
 .s2 {
+    -webkit-flex: 2;
     flex: 2;
 }
 
 .s3 {
+    -webkit-flex: 3;
     flex: 3;
 }
 
 .s4 {
+    -webkit-flex: 4;
     flex: 4;
 }
 
 .s5 {
+    -webkit-flex: 5;
     flex: 5;
 }
 
 .s6 {
+    -webkit-flex: 6;
     flex: 6;
 }
 
 .s7 {
+    -webkit-flex: 7;
     flex: 7;
 }
 
 .s8 {
+    -webkit-flex: 8;
     flex: 8;
 }
 
 .s9 {
+    -webkit-flex: 9;
     flex: 9;
 }
 
 .s10 {
+    -webkit-flex: 10;
     flex: 10;
 }
 
 .s11 {
+    -webkit-flex: 11;
     flex: 11;
 }
 
 .s12 {
+    -webkit-flex: 12;
     flex: 12;
 }
 
@@ -296,26 +352,38 @@ column.center,
 }
 
 .border-radius-0 {
-    border-radius: none;
+    -moz-border-radius: none;
+	-webkit-border-radius: none;
+	border-radius: none;
 }
 
 .border-radius-1 {
+    -moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
     border-radius: 1px;
 }
 
 .border-radius-2 {
+    -moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
     border-radius: 3px;
 }
 
 .border-radius-3 {
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
     border-radius: 5px;
 }
 
 .border-radius-4 {
+    -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
     border-radius: 7px;
 }
 
 .border-radius-5 {
+    -moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
     border-radius: 9px;
 }
 
