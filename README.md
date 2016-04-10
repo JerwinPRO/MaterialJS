@@ -21,13 +21,13 @@ MaterialJS is a growing project and will encounter changes throughout its develo
 Using npm.
 
 ```bash
-npm install materialjs
+npm install cosmicmind-materialjs
 ```
 
 Using bower.
 
 ```bash
-bower install materialjs
+bower install cosmicmind-materialjs
 ```
 
 ## Explore
@@ -41,10 +41,10 @@ MaterialColor is a complete Material Design color library available in CSS and J
 
 ##### JSON
 
-To use the JSON library, require the materialjs package:
+To use the JSON library, require the cosmicmind-materialjs package:
 
 ```javascript
-var materialjs = require('materialjs');
+var materialjs = require('cosmicmind-materialjs');
 var colors = materialjs.colors;
 
 // Access the colors.
@@ -63,7 +63,7 @@ var border = colors.blue.darken4.selector.border;
 To use the CSS library, add the material.css file:
 
 ```html
-<link type="text/css" rel="stylesheet" media="all" href="materialjs/material.css">
+<link type="text/css" rel="stylesheet" media="all" href="cosmicmind-materialjs/material.css">
 ```
 
 Set the background color:
