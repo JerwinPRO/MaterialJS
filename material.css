@@ -110,9 +110,9 @@ html {
 /* Shape Begin */
 
 .circle {
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-	border-radius: 50%;
+    -moz-border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+	border-radius: 50% !important;
 }
 
 .square {
@@ -141,6 +141,22 @@ html {
 	left: 0;
 	bottom: 0;
     right: 0;
+}
+
+.aspect-2to1:before {
+	padding-top: 50% !important;
+}
+
+.aspect-1to2:before {
+	padding-top: 200% !important;
+}
+
+.aspect-4to3:before {
+	padding-top: 75% !important;
+}
+
+.aspect-16to9:before {
+	padding-top: 56.25% !important;
 }
 
 /* Shape End */
@@ -358,33 +374,33 @@ column.center,
 }
 
 .border-radius-1 {
-    -moz-border-radius: 1px;
-	-webkit-border-radius: 1px;
-    border-radius: 1px;
+    -moz-border-radius: 1px !important;
+	-webkit-border-radius: 1px !important;
+    border-radius: 1px !important;
 }
 
 .border-radius-2 {
-    -moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-    border-radius: 3px;
+    -moz-border-radius: 3px !important;
+	-webkit-border-radius: 3px !important;
+    border-radius: 3px !important;
 }
 
 .border-radius-3 {
-    -moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-    border-radius: 5px;
+    -moz-border-radius: 5px !important;
+	-webkit-border-radius: 5px !important;
+    border-radius: 5px !important;
 }
 
 .border-radius-4 {
-    -moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
-    border-radius: 7px;
+    -moz-border-radius: 7px !important;
+	-webkit-border-radius: 7px !important;
+    border-radius: 7px !important;
 }
 
 .border-radius-5 {
-    -moz-border-radius: 9px;
-	-webkit-border-radius: 9px;
-    border-radius: 9px;
+    -moz-border-radius: 9px !important;
+	-webkit-border-radius: 9px !important;
+    border-radius: 9px !important;
 }
 
 /* Border End */
