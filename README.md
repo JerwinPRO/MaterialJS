@@ -2,7 +2,7 @@
 
 # Welcome to MaterialJS Ground Zero
 
-Express your creativity with MaterialJS, an animation and graphics framework for Google's Material Design and Apple's Flat UI in Javascript.
+An animation and graphics framework for Material Design in CSS & JavaScript.
 
 ## Communication
 
