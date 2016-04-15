@@ -30,14 +30,6 @@ Using bower.
 bower install cosmicmind-materialjs
 ```
 
-## Sticker Sheet
-
-To help template your project, checkout our latest addition, Material Sticker Sheet.
-
-![MaterialStickerSheet](http://www.materialkit.io/material/images/stickers/material_iso_1.png)
-
-[Purchase the Sticker Sheet](http://www.materialup.com/posts/material-design-sticker-sheets)
-
 ## Quick Access  
 
 * [Colors](#colors)
