@@ -102,6 +102,11 @@ html {
     visibility: hidden;
 }
 
+.hide-text {
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
 .show {
     display: block;
     visibility: visible;
@@ -168,6 +173,21 @@ row,
     position: relative;
 	display: -webkit-flex;
 	display: flex;
+    flex: 1;
+}
+
+row.expand,
+.row.expand {
+    width: 100%;
+    height: 100%;
+}
+
+column.expand,
+.column.expand {
+    display: -webkit-flex !important;
+	display: flex !important;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 
 column,
@@ -450,13 +470,6 @@ column.center,
 
 .fixed {
     position: fixed !important;
-}
-
-nav {
-    float: left;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .toolbar {
