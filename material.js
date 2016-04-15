@@ -266,7 +266,7 @@
 			} ( window.console, _$ ),
 
 			/*
-			@note			The _OnLoad Object manages window onload, resize, and scroll events at runtime.
+			@note			The _OnLoad Object manages window load, resize, and scroll events at runtime.
 			*/
 			_OnLoad = new function ( _$, window, document, undefined )
 			{
@@ -275,7 +275,7 @@
 					/*
 					@note	Stores the function list for when the window loads.
 					*/
-					self.onload = [];
+					self.load = [];
 
 					/*
 					@note	Stores the function list for when the window scrolls.
@@ -632,13 +632,13 @@
 											@note	Complete stage.
 											*/
 											AjaxRequest.state = AjaxRequest.COMPLETE;
-											execute( AjaxRequest.complete, response );
+											execute( AjaxRequest.complete, response.data, response.request );
 									}
 
 									/*
 									@note	Ensure that the returning message if from the expected origin.
 									*/
-									this.onMessage( MessageReturnDataSubscriber, true );
+									this.message( MessageReturnDataSubscriber, true );
 
 									/*
 									@note	Remove the frame from the document body.
@@ -662,7 +662,7 @@
 								/*
 								@note	Attach the messaging event subscriber.
 								*/
-								$( 'window' ).onMessage( MessageReturnDataSubscriber );
+								$( 'window' ).message( MessageReturnDataSubscriber );
 
 								/*
 								@note	Execute the before send function.
@@ -1757,73 +1757,73 @@
 				},
 
 				/*
-				@function		onMessage
+				@function		message
 				@usage			Adds or removes Subscribers from the Selector Object for message events.
 				@param			handler : The hanlder object, either a single or array of Subscriber Object instances.
 				@param			remove	: A boolean indicating to remove the handlers or not. True is to remove, otherwise not.
 				@return			The Selector object.
 				*/
-				onMessage : function ( handler, remove )
+				message : function ( handler, remove )
 				{
 					return remove ? this.removeListener( 'message', handler ) : this.listener( 'message', handler );
 				},
 
 				/*
-				@function		onLoad
+				@function		load
 				@usage			Adds or removes Subscribers from the Selector Object for load events.
 				@param			handler : The hanlder object, either a single or array of Subscriber Object instances.
 				@param			remove	: A boolean indicating to remove the handlers or not. True is to remove, otherwise not.
 				@return			The Selector object.
 				*/
-				onLoad : function ( handler, remove )
+				load : function ( handler, remove )
 				{
 					return remove ? this.removeListener( 'load', handler ) : this.listener( 'load', handler );
 				},
 
 				/*
-				@function		onClick
+				@function		click
 				@usage			Adds or removes Subscribers from the Selector Object for click events.
 				@param			handler : The hanlder object, either a single or array of Subscriber Object instances.
 				@param			remove	: A boolean indicating to remove the handlers or not. True is to remove, otherwise not.
 				@return			The Selector object.
 				*/
-				onClick : function ( handler, remove )
+				click : function ( handler, remove )
 				{
 					return remove ? this.removeListener( 'click', handler ) : this.listener( 'click', handler );
 				},
 
 				/*
-				@function		onChange
+				@function		change
 				@usage			Adds or removes Subscribers from the Selector Object for change events.
 				@param			handler : The hanlder object, either a single or array of Subscriber Object instances.
 				@param			remove	: A boolean indicating to remove the handlers or not. True is to remove, otherwise not.
 				@return			The Selector object.
 				*/
-				onChange : function ( handler, remove )
+				change : function ( handler, remove )
 				{
 					return remove ? this.removeListener( 'change', handler ) : this.listener( 'change', handler );
 				},
 
 				/*
-				@function		onFocus
+				@function		focus
 				@usage			Adds or removes Subscribers from the Selector Object for focus events.
 				@param			handler : The hanlder object, either a single or array of Subscriber Object instances.
 				@param			remove	: A boolean indicating to remove the handlers or not. True is to remove, otherwise not.
 				@return			The Selector object.
 				*/
-				onFocus : function ( handler, remove )
+				focus : function ( handler, remove )
 				{
 					return remove ? this.removeListener( 'focus', handler ) : this.listener( 'focus', handler );
 				},
 
 				/*
-				@function		onBlur
+				@function		blur
 				@usage			Adds or removes Subscribers from the Selector Object for blur events.
 				@param			handler : The hanlder object, either a single or array of Subscriber Object instances.
 				@param			remove	: A boolean indicating to remove the handlers or not. True is to remove, otherwise not.
 				@return			The Selector object.
 				*/
-				onBlur : function ( handler, remove )
+				blur : function ( handler, remove )
 				{
 					return remove ? this.removeListener( 'blur', handler ) : this.listener( 'blur', handler );
 				},
@@ -1841,25 +1841,25 @@
 				},
 
 				/*
-				@function		onKeyUp
+				@function		keyUp
 				@usage			Adds or removes Subscribers from the Selector Object for keyup events.
 				@param			handler : The hanlder object, either a single or array of Observer/Subscriber Object instances.
 				@param			remove	: A boolean indicating to remove the handlers or not. True is to remove, otherwise not.
 				@return			The Selector object.
 				*/
-				onKeyUp : function ( handler, remove )
+				keyUp : function ( handler, remove )
 				{
 					return remove ? this.removeListener( 'keyup', handler ) : this.listener( 'keyup', handler );
 				},
 
 				/*
-				@function		onKeyDown
+				@function		keyDown
 				@usage			Adds or removes Subscribers from the Selector Object for keydown events.
 				@param			handler : The hanlder object, either a single or array of Observer/Subscriber Object instances.
 				@param			remove	: A boolean indicating to remove the handlers or not. True is to remove, otherwise not.
 				@return			The Selector object.
 				*/
-				onKeyDown : function ( handler, remove )
+				keyDown : function ( handler, remove )
 				{
 					return remove ? this.removeListener( 'keydown', handler ) : this.listener( 'keydown', handler );
 				},
@@ -3699,7 +3699,7 @@
 								*/
 								while ( m = args.shift() )
 								{
-									each( get, function ( key, value )
+									each( get, function ( value, key )
 									{
 										/*
 										@note	Remove the key from the array by not setting it in the result and removing it from the get values.
@@ -3719,7 +3719,7 @@
 								/*
 								@note	Ensure all get values are added to the result.
 								*/
-								each( get, function ( key, value )
+								each( get, function ( value, key )
 								{
 									result[ key ] = value;
 								} );
@@ -3730,7 +3730,7 @@
 							*/
 							else if ( _$.isObject( args ) )
 							{
-								each( args, function ( key, value )
+								each( args, function ( value, key )
 								{
 									/*
 									@note	If the key doesn't exist, then a reload will occur.
@@ -3746,7 +3746,7 @@
 								/*
 								@note	Ensure all get values are added to the result.
 								*/
-								each( get, function ( key, value )
+								each( get, function ( value, key )
 								{
 									if ( !result[ key ] )
 									{
@@ -3765,7 +3765,7 @@
 								/*
 								@note	Create the result string.
 								*/
-								each( result, function ( key, value )
+								each( result, function ( value, key )
 								{
 									get += key + '=' + value + '&';
 								});
@@ -3819,7 +3819,7 @@
 							self.postMessage = settings.postMessage !== false;
 							self.async = settings.async !== false;
 							self.cache = settings.cache !== false;
-							self.method = settings.method !== 'post' ? 'get' : 'post';
+							self.method = (settings.method || '').toLowerCase() !== 'post' ? 'get' : 'post';
 							self.url = settings.url;
 							/*self.url = self.prepareURL( settings.url );*/
 							self.data = settings.data;
@@ -3977,7 +3977,7 @@
 				*/
 				else if ( _$.isObject( args ) )
 				{
-					_$.each( args, function ( key, value )
+					_$.each( args, function ( value, key )
 					{
 						_Cookie.set( key, value );
 					} );
@@ -4036,14 +4036,14 @@
 
 			/*
 			@function		load
-			@usage			Dynamically add window onload events.
+			@usage			Dynamically add window load events.
 			@param			func : The function to add.
 			@param			order : The call stack order.
 			@return			The namespace "$" Object.
 			*/
 			_$.load = function ( func, order )
 			{
-				_OnLoad.addFunction( func, order, _OnLoad.onload );
+				_OnLoad.addFunction( func, order, _OnLoad.load );
 
 				return _$;
 			};
@@ -4087,6 +4087,14 @@
 				return char.replace ? char.replace( /^\s+|\s+$/g, '' ) : char;
 			};
 
+			_$.toCapitalize = function( char ) {
+				return char.replace ? _$.normalizeSpace( char ).replace(/(?:^|\s)\S/g, function ( value )
+				{
+					return value.toUpperCase().replace( /(\_|\-)/g, '' );
+
+				} ) : char;
+			};
+
 			/*
 			@function		toCamel
 			@usage			Turns dashes or underscores to camel casing.
@@ -4110,7 +4118,7 @@
 			*/
 			_$.toDash = function ( char )
 			{
-				return char.replace ? _$.normalizeSpace( char ).replace( /( |\-|\_)+([a-zA-Z])/g, function ( value )
+				return char.replace ? _$.normalizeSpace( char ).replace( /( |\-|\_|[A-Z])+([a-zA-Z])/g, function ( value )
 				{
 					return ( char.indexOf( value ) > 0 ? '-' : '' ) + value.replace( /( |\-|\_)/g, '' );
 
@@ -4125,7 +4133,7 @@
 			*/
 			_$.toUnderscore = function ( char )
 			{
-				return char.replace ? _$.normalizeSpace( char ).replace( /( |\-|\_)+([a-zA-Z])/g, function ( value )
+				return char.replace ? _$.normalizeSpace( char ).replace( /( |\-|\_|[A-Z])+([a-zA-Z])/g, function ( value )
 				{
 					return ( char.indexOf( value ) > 0 ? '_' : '' ) + value.replace( /( |\-|\_)/g, '' );
 
@@ -4247,7 +4255,7 @@
 								*/
 								if ( typeof data[ i ] !== 'function' )
 								{
-									func.call( scope, i, data[ i ] );
+									func.call( scope, data[ i ], i );
 								}
 							}
 						}
@@ -4264,7 +4272,7 @@
 								*/
 								if ( typeof data[ i ] !== 'function' )
 								{
-									func.call( scope, i, data[ i ] );
+									func.call( scope, data[ i ], i );
 								}
 							}
 						}
@@ -4620,7 +4628,7 @@
 							if ( fileTypeRegEx.test( value ) )
 							{
 								$handlerExecute( subscribers.change, { regex : fileTypeRegEx, value : value }, self );
-								iframe.onLoad( IFrameLoadSubscriber );
+								iframe.load( IFrameLoadSubscriber );
 								form[ 0 ].submit();
 							}
 							else
@@ -4661,7 +4669,7 @@
 							/*
 							@note	Remove the handler and the frame from the body element. The sprite image is loaded so it will be pulled from cache.
 							*/
-							iframe.onLoad( IFrameLoadSubscriber, true );
+							iframe.load( IFrameLoadSubscriber, true );
 							iframe[ 0 ].src = '/gbl/img/df-sprite.png';
 					} );
 
@@ -4670,7 +4678,7 @@
 					*/
 					form.append( iframe );
 					form.attribute( 'target', uid );
-					file.onChange( FileChangeSubscriber );
+					file.change( FileChangeSubscriber );
 
 					subscribers.change = $handlerCheck( subscribers.change, $Dispatcher );
 					subscribers.success = $handlerCheck( subscribers.success, $Dispatcher );
@@ -4714,8 +4722,8 @@
 					HideULSelectMenuSubscriber = new Subscriber( function ( event )
 					{
 						ul.hide();
-						body.onClick( HideULSelectMenuSubscriber, true );
-						label.onClick( ShowULSelectorMenuSubscriber );
+						body.click( HideULSelectMenuSubscriber, true );
+						label.click( ShowULSelectorMenuSubscriber );
 					} ),
 
 					/*
@@ -4725,8 +4733,8 @@
 					ShowULSelectorMenuSubscriber = new Subscriber( function ( event )
 					{
 						ul.show();
-						label.onClick( ShowULSelectorMenuSubscriber, true );
-						window.setTimeout( function () { body.onClick( HideULSelectMenuSubscriber ); }, 100 );
+						label.click( ShowULSelectorMenuSubscriber, true );
+						window.setTimeout( function () { body.click( HideULSelectMenuSubscriber ); }, 100 );
 					} ),
 
 					/*
@@ -4746,7 +4754,7 @@
 					*/
 					for ( ; i <= l; ++i )
 					{
-						ul.append( create( 'li', { className : ( i == 0 ? 'first' : ( i == l ? 'last' : '' ) ), html : select.options[ i ].innerHTML, option : i, value : select.options[ i ].value } ).onClick( [ SetSelectedIndexSubscriber, HideULSelectMenuSubscriber, ExecuteCallbackSubscriber ] ) );
+						ul.append( create( 'li', { className : ( i == 0 ? 'first' : ( i == l ? 'last' : '' ) ), html : select.options[ i ].innerHTML, option : i, value : select.options[ i ].value } ).click( [ SetSelectedIndexSubscriber, HideULSelectMenuSubscriber, ExecuteCallbackSubscriber ] ) );
 					}
 
 					/*
@@ -4947,14 +4955,14 @@
 					/*
 					@note	Add the subscribers to the cancel button.
 					*/
-					cancel.onClick( [ ClearIntervalSubscriber, StopDefaultSubscriber, CallCloseCallbackSubscriber, ClearTextareaSubscriber, AnimateToInitialHeightSubscriber, ToggleCancelButtonSubscriber, ToggleLabelSubscriber ] );
+					cancel.click( [ ClearIntervalSubscriber, StopDefaultSubscriber, CallCloseCallbackSubscriber, ClearTextareaSubscriber, AnimateToInitialHeightSubscriber, ToggleCancelButtonSubscriber, ToggleLabelSubscriber ] );
 
 					/*
 					@note	Add the subscribers to the textarea.
 					*/
-					textarea.onFocus( [ AnimateToOpenedHeightSubscriber, StopDefaultSubscriber, CallFocusCallbackSubscriber ] )
-							.onBlur( [ ClearIntervalSubscriber, AdjustTextAreaSubscriber, AnimateToInitialHeightSubscriber, ToggleLabelSubscriber, ToggleCancelButtonSubscriber, StopDefaultSubscriber, CallBlurCallbackSubscriber ] )
-							.onKeyUp( [ AdjustTextAreaSubscriber, StopDefaultSubscriber, CallActiveCallbackSubscriber ] );
+					textarea.focus( [ AnimateToOpenedHeightSubscriber, StopDefaultSubscriber, CallFocusCallbackSubscriber ] )
+							.blur( [ ClearIntervalSubscriber, AdjustTextAreaSubscriber, AnimateToInitialHeightSubscriber, ToggleLabelSubscriber, ToggleCancelButtonSubscriber, StopDefaultSubscriber, CallBlurCallbackSubscriber ] )
+							.keyUp( [ AdjustTextAreaSubscriber, StopDefaultSubscriber, CallActiveCallbackSubscriber ] );
 
 					/*
 					@note	When the input field is initialized.
@@ -5008,7 +5016,7 @@
 						input.value() ? label.hide() : label.show();
 					} ),
 
-					input = self.find( 'input' ).onKeyDown( [ HideSubscriber, ExecuteCallbackSubscriber ] ).onKeyUp( [ DisplaySubscriber, ExecuteCallbackSubscriber ] );
+					input = self.find( 'input' ).keyDown( [ HideSubscriber, ExecuteCallbackSubscriber ] ).keyUp( [ DisplaySubscriber, ExecuteCallbackSubscriber ] );
 
 					/*
 					@note	Ensure all scubscribers are loaded.
@@ -5042,7 +5050,7 @@
 					/*
 					@note			A subscriber is set to detect the form element the submit value resides in.
 					*/
-					self.onClick( [ new $.Subscriber( function ( event )
+					self.click( [ new $.Subscriber( function ( event )
 					{
 						var parent = this.parent();
 
@@ -5731,11 +5739,11 @@
 			};
 
 			/*
-			@note	Add a window onload handler to call the window onload event stacks.
+			@note	Add a window load handler to call the window load event stacks.
 			*/
 			window.onload = function ()
 			{
-				_OnLoad.callFunctionList( _OnLoad.onload );
+				_OnLoad.callFunctionList( _OnLoad.load );
 			};
 
 			/*
@@ -5831,11 +5839,11 @@
 					/*
 					@note	Subject/Observable states.
 					*/
-					_onFocus = new $.Dispatcher( settings.onFocus ),
-					_onClick = new $.Dispatcher( settings.onClick ),
-					_onDrag = new $.Dispatcher( settings.onDrag ),
-					_onTouch = new $.Dispatcher( settings.onTouch ),
-					_onDrop = new $.Dispatcher( settings.onDrop ),
+					_focus = new $.Dispatcher( settings.focus ),
+					_click = new $.Dispatcher( settings.click ),
+					_drag = new $.Dispatcher( settings.drag ),
+					_touch = new $.Dispatcher( settings.touch ),
+					_drop = new $.Dispatcher( settings.drop ),
 
 					/* Limits */
 					_top = settings.limit && 'number' == typeof settings.limit.top ? settings.limit.top : null,
@@ -5883,10 +5891,10 @@
 					} ),
 
 					/*
-					@subscriber		_onTouchStartSubscriber
+					@subscriber		_touchStartSubscriber
 					@usage			MouseDown handler.
 					*/
-					_onTouchStartSubscriber = new $.Subscriber( function ( event )
+					_touchStartSubscriber = new $.Subscriber( function ( event )
 					{
 						_isDragging = true;
 
@@ -5946,9 +5954,9 @@
 						@note	Append to the document and manage handlers.
 						*/
 						if ( _global )
-							_body.onTouchStart( _bodyDisableSubscriber ).append( _draggableSelector );
+							_body.touchStart( _bodyDisableSubscriber ).append( _draggableSelector );
 
-						selector.onTouchStart( _onTouchStartSubscriber, true ).onTouchMove( _onTouchMoveSubscriber ).onTouchEnd( _onTouchEndSubscriber );
+						selector.touchStart( _touchStartSubscriber, true ).touchMove( _touchMoveSubscriber ).touchEnd( _touchEndSubscriber );
 
 						/*
 						@note	Change the CSS to absolute, so the element is moveable and does not interfere with other objects.
@@ -5958,7 +5966,7 @@
 						/*
 						@note	Notify subscribers.
 						*/
-						_onFocus.notify( _touch, self );
+						_focus.notify( _touch, self );
 
 						/*
 						@note	Configure the target stack positions.
@@ -5973,10 +5981,10 @@
 					} ),
 
 					/*
-					@subscriber		_onTouchMoveSubscriber
+					@subscriber		_touchMoveSubscriber
 					@usage			MouseMove handler.
 					*/
-					_onTouchMoveSubscriber = new $.Subscriber( function ( event )
+					_touchMoveSubscriber = new $.Subscriber( function ( event )
 					{
 						var pageX = _touch.pageX,
 							pageY = _touch.pageY,
@@ -5997,7 +6005,7 @@
 							/*
 							@note	Notify subscribers.
 							*/
-							_onDrag.notify( _touch, self );
+							_drag.notify( _touch, self );
 
 							for ( ; i >= 0; --i )
 							{
@@ -6011,7 +6019,7 @@
 									*/
 									_target = _targetStack[ i ];
 
-									_onTouch.notify( _touch, self );
+									_touch.notify( _touch, self );
 
 									break;
 								}
@@ -6025,10 +6033,10 @@
 					} ),
 
 					/*
-					@subscriber		_onTouchEndSubscriber
+					@subscriber		_touchEndSubscriber
 					@usage			MouseUp handler.
 					*/
-					_onTouchEndSubscriber = new $.Subscriber( function ( event )
+					_touchEndSubscriber = new $.Subscriber( function ( event )
 					{
 						_isDragging = false;
 
@@ -6037,8 +6045,8 @@
 						/*
 						@note	Manage handlers.
 						*/
-						_body.onTouchStart( _bodyDisableSubscriber, true );
-						selector.onTouchMove( _onTouchMoveSubscriber, true).onTouchEnd( _onTouchEndSubscriber, true ).onTouchStart( _onTouchStartSubscriber );
+						_body.touchStart( _bodyDisableSubscriber, true );
+						selector.touchMove( _touchMoveSubscriber, true).touchEnd( _touchEndSubscriber, true ).touchStart( _touchStartSubscriber );
 
 						/*
 						@note	If silhouette support is set to true, insert the element back to where the silhouette is an dthen restore the original css and remove the silhouette.
@@ -6064,14 +6072,14 @@
 							/*
 							@note	Notify subscribers.
 							*/
-							_onClick.notify( _touch, self );
+							_click.notify( _touch, self );
 						}
 						else
 						{
 							/*
 							@note	Notify subscribers.
 							*/
-							_onDrop.notify( _touch, self );
+							_drop.notify( _touch, self );
 						}
 
 						/*
@@ -6131,53 +6139,53 @@
 					};
 
 					/*
-					@function	onFocus
+					@function	focus
 					@usage		Retrieves the on focus Subject Object.
 					@return		A Subject Object.
 					*/
-					self.onFocus = function ()
+					self.focus = function ()
 					{
-						return _onFocus;
+						return _focus;
 					};
 
 					/*
-					@function	onClick
+					@function	click
 					@usage		Retrieves the on click Subject Object.
 					@return		A Subject Object.
 					*/
-					self.onClick = function ()
+					self.click = function ()
 					{
-						return _onClick;
+						return _click;
 					};
 
 					/*
-					@function	onDrag
+					@function	drag
 					@usage		Retrieves the on drag Subject Object.
 					@return		A Subject Object.
 					*/
-					self.onDrag = function ()
+					self.drag = function ()
 					{
-						return _onDrag;
+						return _drag;
 					};
 
 					/*
-					@function	onTouch
+					@function	touch
 					@usage		Retrieves the on touch Subject Object.
 					@return		A Subject Object.
 					*/
-					self.onTouch = function ()
+					self.touch = function ()
 					{
-						return _onTouch;
+						return _touch;
 					};
 
 					/*
-					@function	onDrop
+					@function	drop
 					@usage		Retrieves the on drop Subject Object.
 					@return		A Subject Object.
 					*/
-					self.onDrop = function ()
+					self.drop = function ()
 					{
-						return _onDrop;
+						return _drop;
 					};
 
 					/*
@@ -6376,7 +6384,7 @@
 					/*
 					@note	Manage handlers.
 					*/
-					selector.onTouchStart( _onTouchStartSubscriber );
+					selector.touchStart( _touchStartSubscriber );
 			};
 
 			/*
@@ -6424,37 +6432,37 @@
 				},
 
 				/*
-				@function		onTouchStart
+				@function		touchStart
 				@usage			Adds or removes Subscribers from the Selector Object for touchstart events.
 				@param			handler : The hanlder object, either a single or array of Observer/Subscriber Object instances.
 				@param			remove	: A boolean indicating to remove the handlers or not. True is to remove, otherwise not.
 				@return			The Selector object.
 				*/
-				onTouchStart : function ( handler, remove )
+				touchStart : function ( handler, remove )
 				{
 					return remove ? this.removeListener( 'touchstart', handler ) : this.listener( 'touchstart', handler );
 				},
 
 				/*
-				@function		onTouchMove
+				@function		touchMove
 				@usage			Adds or removes Subscribers from the Selector Object for touchmove events.
 				@param			handler : The hanlder object, either a single or array of Observer/Subscriber Object instances.
 				@param			remove	: A boolean indicating to remove the handlers or not. True is to remove, otherwise not.
 				@return			The Selector object.
 				*/
-				onTouchMove : function ( handler, remove )
+				touchMove : function ( handler, remove )
 				{
 					return remove ? this.removeListener( 'touchmove', handler ) : this.listener( 'touchmove', handler );
 				},
 
 				/*
-				@function		onTouchEnd
+				@function		touchEnd
 				@usage			Adds or removes Subscribers from the Selector Object for touchend events.
 				@param			handler : The hanlder object, either a single or array of Observer/Subscriber Object instances.
 				@param			remove	: A boolean indicating to remove the handlers or not. True is to remove, otherwise not.
 				@return			The Selector object.
 				*/
-				onTouchEnd : function ( handler, remove )
+				touchEnd : function ( handler, remove )
 				{
 					return remove ? this.removeListener( 'touchend', handler ) : this.listener( 'touchend', handler );
 				}
@@ -6484,7 +6492,7 @@
 					AnchorOnTouchStartSubscriber = new $.Subscriber( function ( event )
 					{
 						this.addClass( 'active' );
-						$( 'body' ).onTouchStart( AnchorStopBodyDefaultSubscriber );
+						$( 'body' ).touchStart( AnchorStopBodyDefaultSubscriber );
 					} ),
 
 					/*
@@ -6494,13 +6502,13 @@
 					AnchorOnTouchEndSubscriber = new $.Subscriber( function ( event )
 					{
 						this.removeClass( 'active' );
-						$( 'body' ).onTouchStart( AnchorStopBodyDefaultSubscriber, true );
+						$( 'body' ).touchStart( AnchorStopBodyDefaultSubscriber, true );
 					} );
 
 					/*
 					@note	Attach the handlers to the touchstart and touchend events.
 					*/
-					this.onTouchStart( AnchorOnTouchStartSubscriber ).onTouchEnd( AnchorOnTouchEndSubscriber );
+					this.touchStart( AnchorOnTouchStartSubscriber ).touchEnd( AnchorOnTouchEndSubscriber );
 			} } );
 	} );
 
@@ -6511,12 +6519,12 @@
 		{
 			var success = false;
 
-				$.each( arguments, function ( index, arg )
+				$.each( arguments, function ( value )
 				{
-					if ( $.isObject( arg ) )
+					if ( $.isObject( value ) )
 					{
-						var path = arg[ 'path' ],
-							callback = arg[ 'callback' ],
+						var path = value[ 'path' ],
+							callback = value[ 'callback' ],
 							match,
 							params = [];
 
@@ -6547,12 +6555,12 @@
 				} );
 
 				if ( !success )
-					$.each( arguments, function ( index, arg )
+					$.each( arguments, function ( value )
 					{
-						if ( $.isObject( arg )  )
+						if ( $.isObject( value )  )
 						{
-							var path = arg[ 'path' ],
-								callback = arg[ 'callback' ];
+							var path = value[ 'path' ],
+								callback = value[ 'callback' ];
 
 								if ( path == 'default' && callback )
 									( function ( $, path, callback )

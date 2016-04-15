@@ -98,7 +98,7 @@ html {
 }
 
 .hide {
-    display: none;
+    display: none !important;
     visibility: hidden;
 }
 
@@ -485,6 +485,20 @@ column.center,
     z-index: 1000;
 }
 
+.toolbar > .left-controls {
+    position: absolute;
+    height: 64px;
+    top: 0;
+    left: 0;
+}
+
+.toolbar > .right-controls {
+    position: absolute;
+    height: 64px;
+    top: 0;
+    right: 0;
+}
+
 .toolbar.small {
     height: 56px !important;
 }
@@ -494,7 +508,11 @@ column.center,
 }
 
 .toolbar > a,
-.toolbar > button {
+.toolbar > .left-controls > a,
+.toolbar > .right-controls > a,
+.toolbar > button,
+.toolbar > .left-controls > button,
+.toolbar > .right-controls > button {
     position: relative;
 	width: 64px;
 	height: 64px;
@@ -530,15 +548,15 @@ column.center,
 }
 
 .toolbar.small > a,
-.toolbar.small > button {
-	font-size: 18px;
-	width: 56px !important;
+.toolbar.small > .left-controls > a,
+.toolbar.small > .right-controls > a,
+.toolbar.small > button,
+.toolbar.small > .left-controls > button,
+.toolbar.small > .right-controls > button {
+    margin: 0 16px !important;
+    width: 56px !important;
 	height: 56px !important;
-}
-
-.toolbar.small > a,
-.toolbar.small > button {
-	margin: 0 16px !important;
+	font-size: 18px;
 	line-height: 56px;
 }
 
@@ -552,7 +570,11 @@ column.center,
 }
 
 .toolbar.large > a,
-.toolbar.large > button {
+.toolbar.large > .left-controls > a,
+.toolbar.large > .right-controls > a,
+.toolbar.large > button,
+.toolbar.large > .left-controls > button,
+.toolbar.large > .right-controls > button {
     margin: 16px 16px 0 16px !important;
     width: 64px !important;
     height: 64px !important;
