@@ -522,6 +522,7 @@ column.center,
     background: none;
     z-index: 1;
 	font-size: 22px;
+    cursor: pointer;
 }
 
 .toolbar > header {
