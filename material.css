@@ -43,11 +43,11 @@
 
 [class*='cm-']:before{
     display: inline-block;
-   font-family: 'Material';
-   font-style: normal;;
-   font-weight: normal;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale
+    font-family: 'Material';
+    font-style: normal;;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
 }
 
 .cm-arrow-back:before{content:'\0041';}
@@ -96,6 +96,20 @@ html {
     margin: 0;
     padding: 0;
 }
+
+a {
+    text-decoration: none;
+    color: rgba(33, 150, 243, 1) !important;
+}
+
+/* Navigation Begin */
+
+nav.toolbar {
+    top: 0;
+    left: 0;
+}
+
+/* Navigation End */
 
 /* Container Begin */
 
@@ -705,6 +719,11 @@ column.center,
     margin: 0 0 0 auto !important;
 }
 
+.toolbar.small > .left-controls,
+.toolbar.small > .right-controls {
+    height: 56px;
+}
+
 .toolbar.small > a,
 .toolbar.small > .left-controls > a,
 .toolbar.small > .right-controls > a,
@@ -725,6 +744,11 @@ column.center,
 
 .toolbar.large > header {
     height: 96px !important;
+}
+
+.toolbar.large > .left-controls,
+.toolbar.large > .right-controls {
+    height: 96px;
 }
 
 .toolbar.large > a,

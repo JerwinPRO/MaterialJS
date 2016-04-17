@@ -1,0 +1,92 @@
+{
+  "arrowBack": {
+    "cm": "cm-arrow-back"
+  },
+  "arrowDownward": {
+    "cm": "cm-arrow-downward"
+  },
+  "audioLibrary": {
+    "cm": "cm-audio-library"
+  },
+  "audio": {
+    "cm": "cm-audio"
+  },
+  "add": {
+    "cm": "cm-add"
+  },
+  "bell": {
+    "cm": "cm-bell"
+  },
+  "check": {
+    "cm": "cm-check"
+  },
+  "close": {
+    "cm": "cm-close"
+  },
+  "image": {
+    "cm": "cm-image"
+  },
+  "menu": {
+    "cm": "cm-menu"
+  },
+  "microphone": {
+    "cm": "cm-microphone"
+  },
+  "moreHorizizontal": {
+    "cm": "cm-more-horiz"
+  },
+  "moreVertical": {
+    "cm": "cm-more-vert"
+  },
+  "movie": {
+    "cm": "cm-movie"
+  },
+  "pause": {
+    "cm": "cm-pause"
+  },
+  "pen": {
+    "cm": "cm-pen"
+  },
+  "photoCamera": {
+    "cm": "cm-photo-camera"
+  },
+  "photoLibrary": {
+    "cm": "cm-photo-library"
+  },
+  "play": {
+    "cm": "cm-play"
+  },
+  "search": {
+    "cm": "cm-search"
+  },
+  "settings": {
+    "cm": "cm-settings"
+  },
+  "share": {
+    "cm": "cm-share"
+  },
+  "shuffle": {
+    "cm": "cm-shuffle"
+  },
+  "skipBackward": {
+    "cm": "cm-skip-backward"
+  },
+  "skipForward": {
+    "cm": "cm-skip-forward"
+  },
+  "star": {
+    "cm": "cm-star"
+  },
+  "videocam": {
+    "cm": "cm-videocam"
+  },
+  "volumeHigh": {
+    "cm": "cm-volume-high"
+  },
+  "volumeMedium": {
+    "cm": "cm-volume-medium"
+  },
+  "voumeOff": {
+    "cm": "cm-volume-off"
+  }
+}
