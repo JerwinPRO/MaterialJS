@@ -44,7 +44,7 @@
 [class*='cm-']:before{
     display: inline-block;
     font-family: 'Material';
-    font-style: normal;;
+    font-style: normal;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
