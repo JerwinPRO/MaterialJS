@@ -45,7 +45,7 @@ bower install cosmicmind-materialjs
 <a name="colors"></a>
 #### Colors
 
-Material has a complete Material Design color library available in CSS and Javascript. It uses base color values that expand to a range of lighter and darker shades, with the addition of accents.
+Material Color is a complete Material Design color library available within Material. To help with color choices, visit [MaterialColor.io](http://www.materialcolor.io).
 
 ![MaterialMaterialColorPalette](http://www.cosmicmind.io/MK/MaterialMaterialColorPalette.png)
 
@@ -105,7 +105,7 @@ Set the border color.
 <a name="icons"></a>
 #### Icons
 
-Material comes with a library of icons that are available for use within your web applications.
+Material comes with a library of icons that are available for use within your web applications. To help with icon choices, visit [MaterialIcon.io](http://www.materialicon.io).
 
 ![MaterialMaterialIcon](http://www.cosmicmind.io/MK/MaterialMaterialIcon.png)
 
