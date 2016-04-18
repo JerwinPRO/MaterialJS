@@ -685,7 +685,6 @@ column.center,
 .toolbar > .left-controls > button,
 .toolbar > .right-controls > button {
     position: relative;
-	width: 64px;
 	height: 64px;
     border: none;
 	text-align: center;
@@ -731,8 +730,7 @@ column.center,
 .toolbar.small > .left-controls > button,
 .toolbar.small > .right-controls > button {
     margin: 0 16px !important;
-    width: 56px !important;
-	height: 56px !important;
+    height: 56px !important;
 	font-size: 18px;
 	line-height: 56px;
 }
@@ -758,7 +756,6 @@ column.center,
 .toolbar.large > .left-controls > button,
 .toolbar.large > .right-controls > button {
     margin: 16px 16px 0 16px !important;
-    width: 64px !important;
     height: 64px !important;
     line-height: 64px !important;
 }
