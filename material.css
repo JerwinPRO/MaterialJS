@@ -243,42 +243,89 @@ a {
 
 /* Chapter End */
 
+/* Divider Begin */
+
+.divider {
+    margin: 32px auto;
+    padding: 0;
+    position: relative;
+    background-color: rgba(224, 224, 224, 1);
+    height: 1px;
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .divider {
+        width: 42.5%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    .divider {
+        width: 42.5%;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .divider {
+        width: 35%;
+    }
+}
+
+/* Divider End */
+
 /* Article Begin */
 
 .article {
     padding: 48px 0 0 0;
 }
 
-.article > section,
-.article > .section {
-    margin: 48px 0 0 0;
+.article > section + section,
+.article > section + .section,
+.article > .section + section,
+.article > .section + .section {
+    margin: 0;
+    margin-top: 48px;
 }
 
 .article > section > .title,
 .article > .section > .title {
     margin: 0;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 32px;
     color: rgba(33, 150, 243, 1);
 }
 
 .article > section > .subtitle,
 .article > .section > .subtitle {
-    margin: 32px 0 0 0;
-    font-size: 14px;
-    font-weight: 700;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
     color: rgba(38, 50, 56, 1);
 }
 
 .article > section > .detail,
 .article > .section > .detail {
-    margin: 16px 0 0 0;
-    font-size: 14px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.article > section > .title + .detail,
+.article > .section > .title + .detail,
+.article > section > .title + .subtitle,
+.article > .section > .title + .subtitle,
+.article > section > .subtitle + .detail,
+.article > .section > .subtitle + .detail,
+.article > section > .detail + .detail,
+.article > .section > .detail + .detail {
+    margin-top: 24px;
 }
 
 .article > section > .card,
 .article > .section > .card {
-    margin: 16px 0 0 0;
+    margin: 0;
+    margin-top: 16px;
 }
 
 /* Article End */
@@ -325,50 +372,23 @@ a {
     flex-direction: column;
 }
 
-.card > p.title {
-    margin: 32px;
+.card > .title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
     color: rgba(38, 50, 56, 1);
 }
 
-.card > p.detail {
+.card > .detail {
     margin: 0;
-    font-family: 'Lato', sans-serif !important;
+    font-size: 13px;
+    line-height: 20px;
     color: rgba(38, 50, 56, 1);
 }
 
 .card > .title + .detail,
 .card > .detail + .detail {
     margin-top: 16px;
-}
-
-@media screen and (max-width: 600px) {
-    .card p.title {
-        font-size: 16px;
-    }
-
-    .card p.detail {
-        font-size: 12px;
-    }
-}
-
-@media screen and (min-width: 601px) and (max-width: 992px) {
-    .card p.title {
-        font-size: 16px;
-    }
-
-    .card p.detail {
-        font-size: 12px;
-    }
-}
-
-@media screen and (min-width: 993px) {
-    .card p.title {
-        font-size: 24px;
-    }
-
-    .card p.detail {
-        font-size: 14px;
-    }
 }
 
 /* Card End */
@@ -418,6 +438,113 @@ a {
 }
 
 /* Display End */
+
+/* Margins & Padding Begin */
+.margin-0 {
+    margin: 0 !important;
+}
+
+.margin-4 {
+    margin: 4px !important;
+}
+
+.margin-8 {
+    margin: 8px !important;
+}
+
+.margin-12 {
+    margin: 12px !important;
+}
+
+.margin-16 {
+    margin: 16px !important;
+}
+
+.margin-20 {
+    margin: 20px !important;
+}
+
+.margin-24 {
+    margin: 24px !important;
+}
+
+.margin-28 {
+    margin: 28px !important;
+}
+
+.margin-32 {
+    margin: 32px !important;
+}
+
+.margin-36 {
+    margin: 36px !important;
+}
+
+.margin-40 {
+    margin: 40px !important;
+}
+
+.margin-44 {
+    margin: 44px !important;
+}
+
+.margin-48 {
+    margin: 48px !important;
+}
+
+.padding-0 {
+    padding: 0 !important;
+}
+
+.padding-4 {
+    padding: 4px !important;
+}
+
+.padding-8 {
+    padding: 8px !important;
+}
+
+.padding-12 {
+    padding: 12px !important;
+}
+
+.padding-16 {
+    padding: 16px !important;
+}
+
+.padding-20 {
+    padding: 20px !important;
+}
+
+.padding-24 {
+    padding: 24px !important;
+}
+
+.padding-28 {
+    padding: 28px !important;
+}
+
+.padding-32 {
+    padding: 32px !important;
+}
+
+.padding-36 {
+    padding: 36px !important;
+}
+
+.padding-40 {
+    padding: 40px !important;
+}
+
+.padding-44 {
+    padding: 44px !important;
+}
+
+.padding-48 {
+    padding: 48px !important;
+}
+
+/* Margins & Padding End */
 
 /* Shape Begin */
 
@@ -526,26 +653,21 @@ row.space + .row.space > .column,
     margin-top: 0 !important;
 }
 
-column + column,
-column + .column,
-.column + column,
-.column + .column {
-    margin-left: 0 !important;
-}
-
 row.pad > column,
 row.pad > .column,
 .row.pad > column,
-.row.pad > .column {
-    padding: 16px;
-}
-
+.row.pad > .column,
 column.pad > row,
 column.pad > .row,
 .column.pad > row,
 .column.pad > .row {
     padding: 16px;
 }
+
+column + column,
+column + .column,
+.column + column,
+.column + .column,
 
 .container > column:first-child,
 .container > column:first-child,
@@ -561,17 +683,11 @@ column.pad > .row,
     margin-right: 0 !important;
 }
 
-.container > row:first-child,
-.container > row:first-child,
-.container > .row:first-child,
-.container > .row:first-child {
+.container > row,
+.container > row,
+.container > .row,
+.container > .row {
     margin-left: 0 !important;
-}
-
-.container > row:last-child,
-.container > row:last-child,
-.container > .row:last-child,
-.container > .row:last-child {
     margin-right: 0 !important;
 }
 
