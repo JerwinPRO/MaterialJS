@@ -184,8 +184,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body,
-html {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -266,7 +266,7 @@ a {
     }
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1499px) {
     .divider {
         width: 35%;
     }
@@ -349,7 +349,14 @@ a {
     }
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1499px) {
+    .container {
+        width: 70% !important;
+        max-width: 1160px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
     .container {
         width: 70% !important;
         max-width: 1160px;
@@ -413,25 +420,38 @@ a {
 @media screen and (max-width: 600px) {
     .if-not-s,
     .if-m,
-    .if-l {
+    .if-l,
+    .if-xl {
         visibility: hidden !important;
         display: none !important;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 992px) {
-    .if-not-m,
     .if-s,
-    .if-l {
+    .if-not-m,
+    .if-l,
+    .if-xl {
         visibility: hidden !important;
         display: none !important;
     }
 }
 
-@media screen and (min-width: 993px) {
-    .if-not-l,
+@media screen and (min-width: 993px) and (max-width: 1499px) {
     .if-s,
-    .if-m {
+    .if-m,
+    .if-not-l,
+    .if-xl {
+        visibility: hidden !important;
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .if-s,
+    .if-m,
+    .if-l,
+    .if-not-xl {
         visibility: hidden !important;
         display: none !important;
     }
@@ -851,7 +871,7 @@ column.center,
     }
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1499px) {
     .l1 {
         -webkit-flex: 1 !important;
         flex: 1 !important;
@@ -908,6 +928,68 @@ column.center,
     }
 
     .l12 {
+        -webkit-flex: 12 !important;
+        flex: 12 !important;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .xl1 {
+        -webkit-flex: 1 !important;
+        flex: 1 !important;
+    }
+
+    .xl2 {
+        -webkit-flex: 2 !important;
+        flex: 2 !important;
+    }
+
+    .xl3 {
+        -webkit-flex: 3 !important;
+        flex: 3 !important;
+    }
+
+    .xl4 {
+        -webkit-flex: 4 !important;
+        flex: 4 !important;
+    }
+
+    .xl5 {
+        -webkit-flex: 5 !important;
+        flex: 5 !important;
+    }
+
+    .xl6 {
+        -webkit-flex: 6 !important;
+        flex: 6 !important;
+    }
+
+    .xl7 {
+        -webkit-flex: 7 !important;
+        flex: 7 !important;
+    }
+
+    .xl8 {
+        -webkit-flex: 8 !important;
+        flex: 8 !important;
+    }
+
+    .xl9 {
+        -webkit-flex: 9 !important;
+        flex: 9 !important;
+    }
+
+    .xl10 {
+        -webkit-flex: 10 !important;
+        flex: 10 !important;
+    }
+
+    .xl11 {
+        -webkit-flex: 11 !important;
+        flex: 11 !important;
+    }
+
+    .xl12 {
         -webkit-flex: 12 !important;
         flex: 12 !important;
     }
@@ -1052,12 +1134,44 @@ column.center,
     position: fixed !important;
 }
 
-nav.fixed {
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2000;
+/* NavigationDrawer Begin */
+
+.navigation-drawer {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 240px;
+    height: 100%;
+    left: -240px;
+    background-color: rgba(255, 255, 255, 1);
+    display: block;
+    z-index: 5000;
 }
+
+.navigation-drawer.opened {
+    left: 0;
+}
+
+.navigation-drawer + .navigation-canvas {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+}
+
+@media screen and (min-width: 1500px) {
+    .navigation-drawer {
+        left: 0;
+    }
+
+    .navigation-drawer + .navigation-canvas {
+        margin-left: 240px;
+    }
+}
+
+/* NavigationDrawer End */
+
+/* Toolbar Begin */
 
 .toolbar {
     position: relative;
@@ -1127,7 +1241,7 @@ nav.fixed {
 }
 
 .toolbar > .title {
-    padding: 0 32px;
+    padding: 0 16px;
     position: relative;
     height: 64px;
     z-index: 0;
@@ -1214,7 +1328,7 @@ nav.fixed {
 .toolbar.large > .left-controls > button,
 .toolbar.large > .center-controls > button,
 .toolbar.large > .right-controls > button {
-    margin: 16px 32px;
+    margin: 16px 16px;
     height: 64px !important;
     line-height: 64px !important;
 }
@@ -1241,7 +1355,7 @@ nav.fixed {
 .toolbar.x-large > .left-controls > button,
 .toolbar.x-large > .center-controls > button,
 .toolbar.x-large > .right-controls > button {
-    margin: 32px 32px 0 32px !important;
+    margin: 32px 16px 0 16px !important;
     height: 64px !important;
     line-height: 64px !important;
 }
@@ -1249,6 +1363,8 @@ nav.fixed {
 .toolbar.x-large > .title {
     line-height: 144px !important;
 }
+
+/* Toolbar End */
 
 /* MaterialColor Begin */
 

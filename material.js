@@ -208,49 +208,6 @@
 			} ( navigator.userAgent ),
 
 			/*
-			@class		Console
-			@usage		Console is used to log information to the browser console. Only allows logging when debug mode is set to true.
-			*/
-			_Console = new function ( $, _$ )
-			{
-				var self = this;
-
-					/*
-					@function	error
-					@usage		Sets a message to the console with an error status.
-					@param		message : The message string that is written to the console.
-					*/
-					self.error = function (message) {
-						if ( _debug && $ ) {
-							$.error(message);
-						}
-					};
-
-					/*
-					@function	warn
-					@usage		Sets a message to the console with a warning status.
-					@param		message : The message string that is written to the console.
-					*/
-					self.warn = function (message) {
-						if ( _debug && $ ) {
-							$.warn(message);
-						}
-					};
-
-					/*
-					@function	log
-					@usage		Sets a message to the console with a log status.
-					@param		message : The message string that is written to the console.
-					*/
-					self.log = function (message) {
-						if ( _debug && $ ) {
-							$.log(message);
-						}
-					};
-
-			} ( window.console, _$ ),
-
-			/*
 			@note			The _OnLoad Object manages window load, resize, and scroll events at runtime.
 			*/
 			_OnLoad = new function ( _$, window, document, undefined )
@@ -3255,57 +3212,6 @@
 			} );
 
 			/*
-			@class			SmartMovements
-			@usage			Defines the SmartMovements API.
-			*/
-			_SmartMovements = new function ( $, window )
-			{
-				var self = this,
-					_cache = new _Cache();
-
-					/*
-					@function		framework
-					@usage			Extends the SmartMovements API.
-					@param			dynamic : The values to pass to the SmartMovements framework when extendning its API.
-					*/
-					self.framework = function ( dynamic )
-					{
-						if ( !_cache.has( dynamic.smartmovement ) )
-						{
-							_cache.set( $.normalizeSpace( dynamic.smartmovement ), dynamic );
-						}
-					};
-
-					/*
-					@function		callback
-					@usage			The callback function used when the selector calls on the smartmovements.
-					@param			subscribers : A subscriber list of handlers.
-					*/
-					self.callback = function ( subscribers )
-					{
-						var self = this,
-							i,
-							movement,
-							smartmovements = self.attribute( 'smartmovements' );
-
-							smartmovements = smartmovements ? smartmovements.split( ',' ) : [];
-
-							i = smartmovements.length - 1;
-
-							for ( ; i >= 0; --i )
-							{
-								movement = $.normalizeSpace( smartmovements[ i ] );
-
-								if ( _cache.has( movement ) &&( movement = _cache.get( movement ).callback ) && typeof movement === 'function' )
-								{
-									 movement.call( self, $, window, document, undefined, subscribers );
-								}
-							}
-					};
-
-			} ( _$, window );
-
-			/*
 			@function		Cache
 			@usage			Stores values in a cache object with helpful functions.
 			@param			items : An object or array of values to set in the cache.
@@ -3839,39 +3745,6 @@
 
 						return args;
 				}
-			};
-
-			/*
-			@function		error
-			@usage			Logs the message to the console. With an error status.
-			@param			message : The value to log.
-			@return			The namespace "$" Object.
-			*/
-			_$.error = function (message) {
-				_Console.error(message);
-				return _$;
-			};
-
-			/*
-			@function		warn
-			@usage			Logs the message to the console. With a warning status.
-			@param			message : The value to log.
-			@return			The namespace "$" Object.
-			*/
-			_$.warn = function (message) {
-				_Console.warn(message);
-				return _$;
-			};
-
-			/*
-			@function		log
-			@usage			Logs the message to the console. With a log status.
-			@param			message : The value to log.
-			@return			The namespace "$" Object.
-			*/
-			_$.log = function (message) {
-				_Console.log(message);
-				return _$;
 			};
 
 			/*
