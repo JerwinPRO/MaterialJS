@@ -1114,7 +1114,7 @@ nav.fixed {
 .toolbar > .left-controls > button,
 .toolbar > .center-controls > button,
 .toolbar > .right-controls > button {
-    margin: 0 16px !important;
+    margin: 0 16px;
     position: relative;
 	height: 64px;
     border: none;
@@ -1126,7 +1126,7 @@ nav.fixed {
 	cursor: pointer;
 }
 
-.toolbar > header {
+.toolbar > .title {
     padding: 0 32px;
     position: relative;
     height: 64px;
@@ -1134,17 +1134,17 @@ nav.fixed {
     display: flex !important;
 }
 
-.toolbar > header.title {
+.toolbar > .title {
     line-height: 64px;
 	font-size: 20px;
 }
 
-.toolbar > header.left {
+.toolbar > .title.left {
     float: none !important;
     margin: 0 auto 0 0 !important;
 }
 
-.toolbar > header.right {
+.toolbar > .title.right {
     float: none !important;
     margin: 0 0 0 auto !important;
 }
@@ -1167,7 +1167,7 @@ nav.fixed {
 	line-height: 48px;
 }
 
-.toolbar.tiny > header.title {
+.toolbar.tiny > .title {
     height: 48px;
 	line-height: 48px !important;
 }
@@ -1191,12 +1191,12 @@ nav.fixed {
 	line-height: 56px;
 }
 
-.toolbar.small > header.title {
+.toolbar.small > .title {
     height: 56px;
 	line-height: 56px !important;
 }
 
-.toolbar.large > header {
+.toolbar.large > .title {
     height: 96px !important;
 }
 
@@ -1214,16 +1214,16 @@ nav.fixed {
 .toolbar.large > .left-controls > button,
 .toolbar.large > .center-controls > button,
 .toolbar.large > .right-controls > button {
-    margin: 16px 32px !important;
+    margin: 16px 32px;
     height: 64px !important;
     line-height: 64px !important;
 }
 
-.toolbar.large > header.title {
+.toolbar.large > .title {
     line-height: 144px !important;
 }
 
-.toolbar.x-large > header {
+.toolbar.x-large > .title {
     height: 144px !important;
 }
 
@@ -1246,7 +1246,7 @@ nav.fixed {
     line-height: 64px !important;
 }
 
-.toolbar.x-large > header.title {
+.toolbar.x-large > .title {
     line-height: 144px !important;
 }
 
@@ -3136,6 +3136,7 @@ nav.fixed {
 .deep-orange-text {
     color: rgba(255, 87, 34, 1) !important;
 }
+
 .deep-orange-text.lighten-5-text {
     color: rgba(251, 233, 231, 1) !important;
 }
