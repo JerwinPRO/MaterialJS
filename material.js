@@ -1528,94 +1528,38 @@
 				},
 
 				/*
-				@function		listener
+				@function		addListener
 				@usage			Adds an event to an object.
 				@param			type : The event type as a string.
 				@param			handler : The hanlder object, either a single or array of Subscriber Object instances.
 				@param			scope : Optional scope value.
 				@return			The Selector object.
 				*/
-				listener : function ( type, handler, scope )
-				{
-					var self = this,
-						element = self[ 0 ],
-						listener = '$listener_' + type;
-
-						if ( element )
-						{
-							/*
-							@note	If the element already has the listener, attach the handler ( s ) to it.
-							*/
-							if ( self.hasListener( type ) && element[ listener ] instanceof _$.Dispatcher )
-							{
-								element[ listener ].attach( handler );
-							}
-							else
-							{
-								element[ listener ] = new _$.Dispatcher();
-
-								element[ listener ].attach( handler );
-
-								/*
-								@note	A wrapper function is created for the element so that when the event is called, the subscribers are notified. This only happens once per event.
-								*/
-								handler = function ( event )
-								{
-									element[ listener ].notify( _eventFormat( event ), scope || self );
-								};
-
-								/*
-								@note	Choose the correct handler.
-								*/
-								if ( typeof element.addEventListener === 'function' )
-								{
-								   element.addEventListener( type, handler, false );
-								}
-								else if ( typeof element.attachEvent === 'function' )
-								{
-								   element.attachEvent( 'on' + type, handler );
-								}
-								else
-								{
-									element[ 'on' + type ] = handler;
-								}
-
-								/*
-								@note	Append the type of listener set to the element.
-								*/
-								self[ 0 ][ 'listeners' ] = self[ 0 ][ 'listeners' ] ? self[ 0 ][ 'listeners' ] + ' ' + type : type;
-							}
-						}
-
-						return self;
-				},
-
-				/*
-				@function		hasListener
-				@usage			Checks if an object has an event list stack set.
-				@param			type : The event type as a string.
-				@return			A boolean of the result. True if the handler is set, false otherwise.
-				*/
-				hasListener : function ( type )
+				addListener : function ( type, handler, scope )
 				{
 					var self = this,
 						element = self[ 0 ];
 
 						if ( element )
 						{
-							var handlers = ( self[ 0 ][ 'listeners' ] || '' ).split( ' ' ),
-								i = handlers.length - 1;
-
-								for ( ; i >= 0; --i )
-								{
-									if ( handlers[ i ] === type )
-									{
-										return true;
-									}
-								}
+							/*
+							@note	Choose the correct handler.
+							*/
+							if ( typeof element.addEventListener === 'function' )
+							{
+							   element.addEventListener( type, handler, false );
+							}
+							else if ( typeof element.attachEvent === 'function' )
+							{
+							   element.attachEvent( 'on' + type, handler );
+							}
+							else
+							{
+								element[ 'on' + type ] = handler;
+							}
 						}
 
-						return false;
+						return self;
 				},
 
 				/*
@@ -1627,11 +1571,23 @@
 				*/
 				removeListener : function ( type, handler )
 				{
-					var self = this;
+					var self = this,
+						element = self[ 0 ];
 
-						if ( self.hasListener( type ) )
+						if ( element )
 						{
-							self[ 0 ][ '$listener_' + type ].detach( handler );
+							if ( typeof element.removeEventListener === 'function' )
+							{
+							   element.removeEventListener( type, handler, false );
+							}
+							else if ( typeof element.dettachEvent === 'function' )
+							{
+							   element.dettachEvent( 'on' + type, handler );
+							}
+							else
+							{
+								element[ 'on' + type ] = handler;
+							}
 						}
 
 						return self;
@@ -1672,7 +1628,7 @@
 				*/
 				message : function ( handler, remove )
 				{
-					return remove ? this.removeListener( 'message', handler ) : this.listener( 'message', handler );
+					return remove ? this.removeListener( 'message', handler ) : this.addListener( 'message', handler );
 				},
 
 				/*
@@ -1684,7 +1640,7 @@
 				*/
 				load : function ( handler, remove )
 				{
-					return remove ? this.removeListener( 'load', handler ) : this.listener( 'load', handler );
+					return remove ? this.removeListener( 'load', handler ) : this.addListener( 'load', handler );
 				},
 
 				/*
@@ -1696,7 +1652,7 @@
 				*/
 				click : function ( handler, remove )
 				{
-					return remove ? this.removeListener( 'click', handler ) : this.listener( 'click', handler );
+					return remove ? this.removeListener( 'click', handler ) : this.addListener( 'click', handler );
 				},
 
 				/*
@@ -1708,7 +1664,7 @@
 				*/
 				change : function ( handler, remove )
 				{
-					return remove ? this.removeListener( 'change', handler ) : this.listener( 'change', handler );
+					return remove ? this.removeListener( 'change', handler ) : this.addListener( 'change', handler );
 				},
 
 				/*
@@ -1720,7 +1676,7 @@
 				*/
 				focus : function ( handler, remove )
 				{
-					return remove ? this.removeListener( 'focus', handler ) : this.listener( 'focus', handler );
+					return remove ? this.removeListener( 'focus', handler ) : this.addListener( 'focus', handler );
 				},
 
 				/*
@@ -1732,7 +1688,7 @@
 				*/
 				blur : function ( handler, remove )
 				{
-					return remove ? this.removeListener( 'blur', handler ) : this.listener( 'blur', handler );
+					return remove ? this.removeListener( 'blur', handler ) : this.addListener( 'blur', handler );
 				},
 
 				/*
@@ -1744,7 +1700,7 @@
 				*/
 				keyPress : function ( handler, remove )
 				{
-					return remove ? this.removeListener( 'keypress', handler ) : this.listener( 'keypress', handler );
+					return remove ? this.removeListener( 'keypress', handler ) : this.addListener( 'keypress', handler );
 				},
 
 				/*
@@ -1756,7 +1712,7 @@
 				*/
 				keyUp : function ( handler, remove )
 				{
-					return remove ? this.removeListener( 'keyup', handler ) : this.listener( 'keyup', handler );
+					return remove ? this.removeListener( 'keyup', handler ) : this.addListener( 'keyup', handler );
 				},
 
 				/*
@@ -1768,7 +1724,7 @@
 				*/
 				keyDown : function ( handler, remove )
 				{
-					return remove ? this.removeListener( 'keydown', handler ) : this.listener( 'keydown', handler );
+					return remove ? this.removeListener( 'keydown', handler ) : this.addListener( 'keydown', handler );
 				},
 
 				/*
