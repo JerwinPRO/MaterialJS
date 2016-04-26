@@ -339,7 +339,8 @@ a {
 /* Container Begin */
 
 .container {
-    margin: 0 auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
     position: relative;
 }
 
@@ -1161,7 +1162,7 @@ column.center,
 }
 
 .nav-drawer.opened + .nav-canvas {
-    opacity: .8;
+    opacity: .5;
     cursor: pointer;
 }
 
@@ -1183,6 +1184,22 @@ column.center,
 .nav-drawer .toolbar {
     border-bottom: 1px solid rgba(224, 224, 224, 1);
     box-shadow: none;
+}
+
+.nav-drawer > ul {
+    margin: 24px 0 0 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.nav-drawer > ul > li {
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    line-height: 40px;
+    text-indent: 24px;
 }
 
 @media screen and (max-width: 1499px) {
