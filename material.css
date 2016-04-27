@@ -262,7 +262,7 @@ a {
 /* Title Begin */
 
 .subtitle {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .brand {
@@ -509,9 +509,9 @@ a {
     .if-m,
     .if-l,
     .if-xl,
-    .if-gt-m,
-    .if-gt-l,
-    .if-gt-xl {
+    .if-gte-m,
+    .if-gte-l,
+    .if-gte-xl {
         visibility: hidden !important;
         display: none !important;
     }
@@ -522,8 +522,9 @@ a {
     .if-not-m,
     .if-l,
     .if-xl,
-    .if-gt-l,
-    .if-gt-xl {
+    .if-gte-l,
+    .if-gte-xl,
+    .if-lte-s {
         visibility: hidden !important;
         display: none !important;
     }
@@ -534,7 +535,9 @@ a {
     .if-m,
     .if-not-l,
     .if-xl,
-    .if-gt-xl {
+    .if-gte-xl,
+    .if-lte-s,
+    .if-lte-m {
         visibility: hidden !important;
         display: none !important;
     }
@@ -544,7 +547,10 @@ a {
     .if-s,
     .if-m,
     .if-l,
-    .if-not-xl {
+    .if-not-xl,
+    .if-lte-s,
+    .if-lte-m,
+    .if-lte-l {
         visibility: hidden !important;
         display: none !important;
     }
@@ -1307,7 +1313,7 @@ column.center,
         right: 0;
     }
 
-    .nav-drawer + .nav-canvas > nav.fixed {
+    .nav-drawer + .nav-canvas > .fixed {
         margin-left: 240px;
     }
 }
@@ -1317,6 +1323,7 @@ column.center,
 /* Toolbar Begin */
 
 .toolbar {
+    margin: 0;
     position: relative;
     left: 0;
     right: 0;
@@ -1390,7 +1397,7 @@ column.center,
     position: relative;
     height: 64px;
     z-index: 0;
-    display: flex !important;
+    display: flex;
 }
 
 .toolbar > .title {
