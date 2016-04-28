@@ -1537,29 +1537,27 @@
 				*/
 				addListener : function ( type, handler, scope )
 				{
-					var self = this,
-						element = self[ 0 ];
+					var self = this;
 
-						if ( element )
+					$.each(self, function(element) {
+						/*
+						@note	Choose the correct handler.
+						*/
+						if ( typeof element.addEventListener === 'function' )
 						{
-							/*
-							@note	Choose the correct handler.
-							*/
-							if ( typeof element.addEventListener === 'function' )
-							{
-							   element.addEventListener( type, handler, false );
-							}
-							else if ( typeof element.attachEvent === 'function' )
-							{
-							   element.attachEvent( 'on' + type, handler );
-							}
-							else
-							{
-								element[ 'on' + type ] = handler;
-							}
+						   element.addEventListener( type, handler, false );
 						}
+						else if ( typeof element.attachEvent === 'function' )
+						{
+						   element.attachEvent( 'on' + type, handler );
+						}
+						else
+						{
+							element[ 'on' + type ] = handler;
+						}
+					});
 
-						return self;
+					return self;
 				},
 
 				/*
