@@ -42,7 +42,7 @@ bower install cosmicmind-materialjs
 
 ## Explore
 
-<a name="colors"></a>
+<a id="colors"></a>
 #### Colors
 
 Material Color is a complete Material Design color library available within Material. To help with color choices, visit [MaterialColor.io](http://www.materialcolor.io).
@@ -102,7 +102,7 @@ Set the border color.
 
 [Learn More About Colors](https://github.com/CosmicMind/MaterialJS/wiki/Colors).
 
-<a name="icons"></a>
+<a id="icons"></a>
 #### Icons
 
 Material comes with a library of icons that are available for use within your web applications. To help with icon choices, visit [MaterialIcon.io](http://www.materialicon.io).
@@ -123,7 +123,7 @@ Use icons with anchors.
 
 [Learn More About Icons](https://github.com/CosmicMind/MaterialJS/wiki/Icons).
 
-<a name="grid"></a>
+<a id="grid"></a>
 #### Grid
 
 Grid is a flexible layout tool using rows and columns. A *row* extends horizontally to the size of its parent's width, while a *column* expands vertically to its parent's height.
@@ -172,7 +172,7 @@ Add padding.
 
 [Learn More About Grid](https://github.com/CosmicMind/MaterialJS/wiki/Grid).
 
-<a name="depth"></a>
+<a id="depth"></a>
 #### Depth
 
 Use the CSS depth classes to visualize hierarchy on the Z index.
@@ -189,7 +189,7 @@ Use the CSS depth classes to visualize hierarchy on the Z index.
 
 [Learn More About Depth](https://github.com/CosmicMind/MaterialJS/wiki/Depth).
 
-<a name="borderradius"></a>
+<a id="borderradius"></a>
 #### Border Radius
 
 Use the border radius CSS classes to apply rounded corners on elements.
@@ -206,7 +206,7 @@ Use the border radius CSS classes to apply rounded corners on elements.
 
 [Learn More About Border Radius](https://github.com/CosmicMind/MaterialJS/wiki/Border Radius).
 
-<a name="shapes"></a>
+<a id="shapes"></a>
 #### Shapes
 
 Shape helper classes are available in CSS to simplify making circles and squares.
@@ -233,7 +233,7 @@ Shape helper classes are available in CSS to simplify making circles and squares
 
 [Learn More About Shapes](https://github.com/CosmicMind/MaterialJS/wiki/Shapes).
 
-<a name="toolbar"></a>
+<a id="toolbar"></a>
 #### Toolbar
 
 A Toolbar is an effective method to organize your applications flow.
