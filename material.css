@@ -288,7 +288,6 @@ a {
 }
 
 .brand {
-    font-weight: 400 !important;
     font-family: 'Montserrat', 'Roboto', sans-serif;
 }
 
@@ -761,7 +760,6 @@ a {
 
 /* Grid Begin */
 
-row,
 .row {
     position: relative;
     display: -webkit-flex;
@@ -777,7 +775,6 @@ row,
     flex-direction: row;
 }
 
-column,
 .column {
     position: relative;
     display: -webkit-flex;
@@ -1440,8 +1437,12 @@ column,
     padding: 0;
     position: relative;
     display: block;
-    z-index: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
+    z-index: 0;
     transition: margin-left 200ms linear;
 }
 
