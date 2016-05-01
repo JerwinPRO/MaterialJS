@@ -1446,6 +1446,10 @@ a {
     transition: margin-left 200ms linear;
 }
 
+.nav-footer {
+    transition: margin-left 200ms linear;
+}
+
 .nav-drawer-opened > .nav-main {
     cursor: pointer;
 }
@@ -1498,7 +1502,8 @@ a {
         transform: translate3d(0, 0, 0);
     }
 
-    .nav-drawer + .nav-main {
+    .nav-drawer + .nav-main,
+    .nav-drawer + .nav-main + .nav-footer {
         margin-left: 240px;
         left: 0;
         right: 0;
@@ -1518,7 +1523,7 @@ a {
 /* Toolbar Begin */
 
 .toolbar {
-    margin: 0;
+    margin: 0 auto;
     position: relative;
     left: 0;
     right: 0;
@@ -1565,7 +1570,7 @@ a {
     height: 96px !important;
 }
 
-.toolbar.x-large {
+.toolbar.xlarge {
     height: 144px !important;
 }
 
@@ -1577,7 +1582,8 @@ a {
 .toolbar > .left-controls > button,
 .toolbar > .center-controls > button,
 .toolbar > .right-controls > button {
-    margin: 0 16px;
+    margin: 0;
+    padding: 0 24px;
     position: relative;
 	height: 64px;
     border: none;
@@ -1590,28 +1596,16 @@ a {
 }
 
 .toolbar > .title {
-    padding: 0 16px;
+    margin: 0 auto;
+    padding: 0;
     position: relative;
     height: 64px;
+    line-height: 64px;
+    font-size: 20px;
     z-index: 0;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-}
-
-.toolbar > .title {
-    line-height: 64px;
-	font-size: 20px;
-}
-
-.toolbar > .title.left {
-    float: none !important;
-    margin: 0 auto 0 0 !important;
-}
-
-.toolbar > .title.right {
-    float: none !important;
-    margin: 0 0 0 auto !important;
 }
 
 .toolbar.tiny > .left-controls,
@@ -1628,14 +1622,14 @@ a {
 .toolbar.tiny > .center-controls > button,
 .toolbar.tiny > .right-controls > button {
     height: 48px !important;
-	font-size: 12px;
-	line-height: 48px;
+	font-size: 14px;
+	line-height: 48px !important;
 }
 
 .toolbar.tiny > .title {
-    height: 48px;
+    height: 48px !important;
     line-height: 48px !important;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .toolbar.small > .left-controls,
@@ -1654,16 +1648,12 @@ a {
 .toolbar.small > .right-controls > button {
     height: 56px !important;
 	font-size: 18px;
-	line-height: 56px;
-}
-
-.toolbar.small > .title {
-    height: 56px;
 	line-height: 56px !important;
 }
 
-.toolbar.large > .title {
-    height: 96px !important;
+.toolbar.small > .title {
+    height: 56px !important;
+	line-height: 56px !important;
 }
 
 .toolbar.large > .left-controls,
@@ -1680,40 +1670,38 @@ a {
 .toolbar.large > .left-controls > button,
 .toolbar.large > .center-controls > button,
 .toolbar.large > .right-controls > button {
-    margin: 16px 16px;
     height: 64px !important;
     line-height: 64px !important;
 }
 
 .toolbar.large > .title {
-    line-height: 144px !important;
-}
-
-.toolbar.x-large > .title {
-    height: 144px !important;
-}
-
-.toolbar.x-large > .left-controls,
-.toolbar.x-large > .center-controls,
-.toolbar.x-large > .right-controls {
-    height: 144px;
-}
-
-.toolbar.x-large > a,
-.toolbar.x-large > .left-controls > a,
-.toolbar.x-large > .center-controls > a,
-.toolbar.x-large > .right-controls > a,
-.toolbar.x-large > button,
-.toolbar.x-large > .left-controls > button,
-.toolbar.x-large > .center-controls > button,
-.toolbar.x-large > .right-controls > button {
-    margin: 32px 16px 0 16px !important;
+    margin: 32px 0 0 0;
     height: 64px !important;
     line-height: 64px !important;
 }
 
-.toolbar.x-large > .title {
-    line-height: 144px !important;
+.toolbar.xlarge > .left-controls,
+.toolbar.xlarge > .center-controls,
+.toolbar.xlarge > .right-controls {
+    height: 96px;
+}
+
+.toolbar.xlarge > a,
+.toolbar.xlarge > .left-controls > a,
+.toolbar.xlarge > .center-controls > a,
+.toolbar.xlarge > .right-controls > a,
+.toolbar.xlarge > button,
+.toolbar.xlarge > .left-controls > button,
+.toolbar.xlarge > .center-controls > button,
+.toolbar.xlarge > .right-controls > button {
+    height: 64px !important;
+    line-height: 64px !important;
+}
+
+.toolbar.xlarge > .title {
+    margin: 80px 0 0 0;
+    height: 64px !important;
+    line-height: 64px !important;
 }
 
 /* Toolbar End */
