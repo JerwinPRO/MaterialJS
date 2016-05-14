@@ -1,19 +1,5 @@
 {
   "red": {
-    "base": {
-      "rgb": {
-        "red": 244,
-        "green": 67,
-        "blue": 54
-      },
-      "hex": "#f44336",
-      "code": "500",
-      "selector": {
-        "element": ".red",
-        "text": ".red-text.",
-        "border": ".red-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 255,
@@ -82,6 +68,20 @@
         "element": ".red.lighten-1",
         "text": ".red-text.lighten-1-text",
         "border": ".red-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 244,
+        "green": 67,
+        "blue": 54
+      },
+      "hex": "#f44336",
+      "code": "500",
+      "selector": {
+        "element": ".red",
+        "text": ".red-text.",
+        "border": ".red-border."
       }
     },
     "darken1": {
@@ -198,20 +198,6 @@
     }
   },
   "pink": {
-    "base": {
-      "rgb": {
-        "red": 233,
-        "green": 30,
-        "blue": 99
-      },
-      "hex": "#e91e63",
-      "code": "500",
-      "selector": {
-        "element": ".pink",
-        "text": ".pink-text.",
-        "border": ".pink-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 252,
@@ -280,6 +266,20 @@
         "element": ".pink.lighten-1",
         "text": ".pink-text.lighten-1-text",
         "border": ".pink-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 233,
+        "green": 30,
+        "blue": 99
+      },
+      "hex": "#e91e63",
+      "code": "500",
+      "selector": {
+        "element": ".pink",
+        "text": ".pink-text.",
+        "border": ".pink-border."
       }
     },
     "darken1": {
@@ -396,20 +396,6 @@
     }
   },
   "purple": {
-    "base": {
-      "rgb": {
-        "red": 156,
-        "green": 39,
-        "blue": 176
-      },
-      "hex": "#9c27b0",
-      "code": "500",
-      "selector": {
-        "element": ".purple",
-        "text": ".purple-text.",
-        "border": ".purple-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 243,
@@ -478,6 +464,20 @@
         "element": ".purple.lighten-1",
         "text": ".purple-text.lighten-1-text",
         "border": ".purple-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 156,
+        "green": 39,
+        "blue": 176
+      },
+      "hex": "#9c27b0",
+      "code": "500",
+      "selector": {
+        "element": ".purple",
+        "text": ".purple-text.",
+        "border": ".purple-border."
       }
     },
     "darken1": {
@@ -594,20 +594,6 @@
     }
   },
   "deepPurple": {
-    "base": {
-      "rgb": {
-        "red": 103,
-        "green": 58,
-        "blue": 183
-      },
-      "hex": "#673ab7",
-      "code": "500",
-      "selector": {
-        "element": ".deep-purple",
-        "text": ".deep-purple-text.",
-        "border": ".deep-purple-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 237,
@@ -676,6 +662,20 @@
         "element": ".deep-purple.lighten-1",
         "text": ".deep-purple-text.lighten-1-text",
         "border": ".deep-purple-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 103,
+        "green": 58,
+        "blue": 183
+      },
+      "hex": "#673ab7",
+      "code": "500",
+      "selector": {
+        "element": ".deep-purple",
+        "text": ".deep-purple-text.",
+        "border": ".deep-purple-border."
       }
     },
     "darken1": {
@@ -792,20 +792,6 @@
     }
   },
   "indigo": {
-    "base": {
-      "rgb": {
-        "red": 63,
-        "green": 81,
-        "blue": 181
-      },
-      "hex": "#3f51b5",
-      "code": "500",
-      "selector": {
-        "element": ".indigo",
-        "text": ".indigo-text.",
-        "border": ".indigo-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 232,
@@ -874,6 +860,20 @@
         "element": ".indigo.lighten-1",
         "text": ".indigo-text.lighten-1-text",
         "border": ".indigo-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 63,
+        "green": 81,
+        "blue": 181
+      },
+      "hex": "#3f51b5",
+      "code": "500",
+      "selector": {
+        "element": ".indigo",
+        "text": ".indigo-text.",
+        "border": ".indigo-border."
       }
     },
     "darken1": {
@@ -990,20 +990,6 @@
     }
   },
   "blue": {
-    "base": {
-      "rgb": {
-        "red": 33,
-        "green": 150,
-        "blue": 243
-      },
-      "hex": "#2196f3",
-      "code": "500",
-      "selector": {
-        "element": ".blue",
-        "text": ".blue-text.",
-        "border": ".blue-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 227,
@@ -1072,6 +1058,20 @@
         "element": ".blue.lighten-1",
         "text": ".blue-text.lighten-1-text",
         "border": ".blue-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 33,
+        "green": 150,
+        "blue": 243
+      },
+      "hex": "#2196f3",
+      "code": "500",
+      "selector": {
+        "element": ".blue",
+        "text": ".blue-text.",
+        "border": ".blue-border."
       }
     },
     "darken1": {
@@ -1188,20 +1188,6 @@
     }
   },
   "lightBlue": {
-    "base": {
-      "rgb": {
-        "red": 3,
-        "green": 169,
-        "blue": 244
-      },
-      "hex": "#03a9f4",
-      "code": "500",
-      "selector": {
-        "element": ".light-blue",
-        "text": ".light-blue-text.",
-        "border": ".light-blue-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 225,
@@ -1270,6 +1256,20 @@
         "element": ".light-blue.lighten-1",
         "text": ".light-blue-text.lighten-1-text",
         "border": ".light-blue-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 3,
+        "green": 169,
+        "blue": 244
+      },
+      "hex": "#03a9f4",
+      "code": "500",
+      "selector": {
+        "element": ".light-blue",
+        "text": ".light-blue-text.",
+        "border": ".light-blue-border."
       }
     },
     "darken1": {
@@ -1386,20 +1386,6 @@
     }
   },
   "cyan": {
-    "base": {
-      "rgb": {
-        "red": 0,
-        "green": 188,
-        "blue": 212
-      },
-      "hex": "#00bcd4",
-      "code": "500",
-      "selector": {
-        "element": ".cyan",
-        "text": ".cyan-text",
-        "border": ".cyan-border"
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 224,
@@ -1468,6 +1454,20 @@
         "element": ".cyan.lighten-1",
         "text": ".cyan-text.lighten-1-text",
         "border": ".cyan-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 0,
+        "green": 188,
+        "blue": 212
+      },
+      "hex": "#00bcd4",
+      "code": "500",
+      "selector": {
+        "element": ".cyan",
+        "text": ".cyan-text",
+        "border": ".cyan-border"
       }
     },
     "darken1": {
@@ -1584,20 +1584,6 @@
     }
   },
   "teal": {
-    "base": {
-      "rgb": {
-        "red": 0,
-        "green": 150,
-        "blue": 136
-      },
-      "hex": "#009688",
-      "code": "500",
-      "selector": {
-        "element": ".teal",
-        "text": ".teal-text.",
-        "border": ".teal-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 224,
@@ -1666,6 +1652,20 @@
         "element": ".teal.lighten-1",
         "text": ".teal-text.lighten-1-text",
         "border": ".teal-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 0,
+        "green": 150,
+        "blue": 136
+      },
+      "hex": "#009688",
+      "code": "500",
+      "selector": {
+        "element": ".teal",
+        "text": ".teal-text.",
+        "border": ".teal-border."
       }
     },
     "darken1": {
@@ -1782,20 +1782,6 @@
     }
   },
   "green": {
-    "base": {
-      "rgb": {
-        "red": 76,
-        "green": 175,
-        "blue": 80
-      },
-      "hex": "#4caf50",
-      "code": "500",
-      "selector": {
-        "element": ".green",
-        "text": ".green-text.",
-        "border": ".green-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 232,
@@ -1864,6 +1850,20 @@
         "element": ".green.lighten-1",
         "text": ".green-text.lighten-1-text",
         "border": ".green-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 76,
+        "green": 175,
+        "blue": 80
+      },
+      "hex": "#4caf50",
+      "code": "500",
+      "selector": {
+        "element": ".green",
+        "text": ".green-text.",
+        "border": ".green-border."
       }
     },
     "darken1": {
@@ -1980,20 +1980,6 @@
     }
   },
   "lightGreen": {
-    "base": {
-      "rgb": {
-        "red": 139,
-        "green": 195,
-        "blue": 74
-      },
-      "hex": "#8bc34a",
-      "code": "500",
-      "selector": {
-        "element": ".light-green",
-        "text": ".light-green-text.",
-        "border": ".light-green-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 241,
@@ -2062,6 +2048,20 @@
         "element": ".light-green.lighten-1",
         "text": ".light-green-text.lighten-1-text",
         "border": ".light-green-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 139,
+        "green": 195,
+        "blue": 74
+      },
+      "hex": "#8bc34a",
+      "code": "500",
+      "selector": {
+        "element": ".light-green",
+        "text": ".light-green-text.",
+        "border": ".light-green-border."
       }
     },
     "darken1": {
@@ -2178,20 +2178,6 @@
     }
   },
   "lime": {
-    "base": {
-      "rgb": {
-        "red": 205,
-        "green": 220,
-        "blue": 57
-      },
-      "hex": "#cddc39",
-      "code": "500",
-      "selector": {
-        "element": ".lime",
-        "text": ".lime-text.",
-        "border": ".lime-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 249,
@@ -2260,6 +2246,20 @@
         "element": ".lime.lighten-1",
         "text": ".lime-text.lighten-1-text",
         "border": ".lime-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 205,
+        "green": 220,
+        "blue": 57
+      },
+      "hex": "#cddc39",
+      "code": "500",
+      "selector": {
+        "element": ".lime",
+        "text": ".lime-text.",
+        "border": ".lime-border."
       }
     },
     "darken1": {
@@ -2376,20 +2376,6 @@
     }
   },
   "yellow": {
-    "base": {
-      "rgb": {
-        "red": 255,
-        "green": 235,
-        "blue": 59
-      },
-      "hex": "#ffeb3b",
-      "code": "500",
-      "selector": {
-        "element": ".yellow",
-        "text": ".yellow-text.",
-        "border": ".yellow-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 255,
@@ -2458,6 +2444,20 @@
         "element": ".yellow.lighten-1",
         "text": ".yellow-text.lighten-1-text",
         "border": ".yellow-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 255,
+        "green": 235,
+        "blue": 59
+      },
+      "hex": "#ffeb3b",
+      "code": "500",
+      "selector": {
+        "element": ".yellow",
+        "text": ".yellow-text.",
+        "border": ".yellow-border."
       }
     },
     "darken1": {
@@ -2574,20 +2574,6 @@
     }
   },
   "amber": {
-    "base": {
-      "rgb": {
-        "red": 255,
-        "green": 193,
-        "blue": 7
-      },
-      "hex": "#ffc107",
-      "code": "500",
-      "selector": {
-        "element": ".amber",
-        "text": ".amber-text.",
-        "border": ".amber-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 255,
@@ -2656,6 +2642,20 @@
         "element": ".amber.lighten-1",
         "text": ".amber-text.lighten-1-text",
         "border": ".amber-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 255,
+        "green": 193,
+        "blue": 7
+      },
+      "hex": "#ffc107",
+      "code": "500",
+      "selector": {
+        "element": ".amber",
+        "text": ".amber-text.",
+        "border": ".amber-border."
       }
     },
     "darken1": {
@@ -2772,20 +2772,6 @@
     }
   },
   "orange": {
-    "base": {
-      "rgb": {
-        "red": 255,
-        "green": 152,
-        "blue": 0
-      },
-      "hex": "#ff9800",
-      "code": "500",
-      "selector": {
-        "element": ".orange",
-        "text": ".orange-text.",
-        "border": ".orange-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 255,
@@ -2854,6 +2840,20 @@
         "element": ".orange.lighten-1",
         "text": ".orange-text.lighten-1-text",
         "border": ".orange-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 255,
+        "green": 152,
+        "blue": 0
+      },
+      "hex": "#ff9800",
+      "code": "500",
+      "selector": {
+        "element": ".orange",
+        "text": ".orange-text.",
+        "border": ".orange-border."
       }
     },
     "darken1": {
@@ -2970,20 +2970,6 @@
     }
   },
   "deepOrange": {
-    "base": {
-      "rgb": {
-        "red": 255,
-        "green": 87,
-        "blue": 34
-      },
-      "hex": "#ff5722",
-      "code": "500",
-      "selector": {
-        "element": ".deep-orange",
-        "text": ".deep-orange-text.",
-        "border": ".deep-orange-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 251,
@@ -3052,6 +3038,20 @@
         "element": ".deep-orange.lighten-1",
         "text": ".deep-orange-text.lighten-1-text",
         "border": ".deep-orange-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 255,
+        "green": 87,
+        "blue": 34
+      },
+      "hex": "#ff5722",
+      "code": "500",
+      "selector": {
+        "element": ".deep-orange",
+        "text": ".deep-orange-text.",
+        "border": ".deep-orange-border."
       }
     },
     "darken1": {
@@ -3168,20 +3168,6 @@
     }
   },
   "brown": {
-    "base": {
-      "rgb": {
-        "red": 121,
-        "green": 85,
-        "blue": 72
-      },
-      "hex": "#795548",
-      "code": "500",
-      "selector": {
-        "element": ".brown",
-        "text": ".brown-text.",
-        "border": ".brown-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 239,
@@ -3252,6 +3238,20 @@
         "border": ".brown-border.lighten-1-border"
       }
     },
+    "base": {
+      "rgb": {
+        "red": 121,
+        "green": 85,
+        "blue": 72
+      },
+      "hex": "#795548",
+      "code": "500",
+      "selector": {
+        "element": ".brown",
+        "text": ".brown-text.",
+        "border": ".brown-border."
+      }
+    },
     "darken1": {
       "rgb": {
         "red": 109,
@@ -3310,20 +3310,6 @@
     }
   },
   "grey": {
-    "base": {
-      "rgb": {
-        "red": 158,
-        "green": 158,
-        "blue": 158
-      },
-      "hex": "#9e9e9e",
-      "code": "500",
-      "selector": {
-        "element": ".grey",
-        "text": ".grey-text.",
-        "border": ".grey-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 250,
@@ -3394,6 +3380,20 @@
         "border": ".grey-border.lighten-1-border"
       }
     },
+    "base": {
+      "rgb": {
+        "red": 158,
+        "green": 158,
+        "blue": 158
+      },
+      "hex": "#9e9e9e",
+      "code": "500",
+      "selector": {
+        "element": ".grey",
+        "text": ".grey-text.",
+        "border": ".grey-border."
+      }
+    },
     "darken1": {
       "rgb": {
         "red": 117,
@@ -3452,20 +3452,6 @@
     }
   },
   "blueGrey": {
-    "base": {
-      "rgb": {
-        "red": 96,
-        "green": 125,
-        "blue": 139
-      },
-      "hex": "#607d8b",
-      "code": "500",
-      "selector": {
-        "element": ".blue-grey",
-        "text": ".blue-grey-text.",
-        "border": ".blue-grey-border."
-      }
-    },
     "lighten5": {
       "rgb": {
         "red": 236,
@@ -3534,6 +3520,20 @@
         "element": ".blue-grey.lighten-1",
         "text": ".blue-grey-text.lighten-1-text",
         "border": ".blue-grey-border.lighten-1-border"
+      }
+    },
+    "base": {
+      "rgb": {
+        "red": 96,
+        "green": 125,
+        "blue": 139
+      },
+      "hex": "#607d8b",
+      "code": "500",
+      "selector": {
+        "element": ".blue-grey",
+        "text": ".blue-grey-text.",
+        "border": ".blue-grey-border."
       }
     },
     "darken1": {
