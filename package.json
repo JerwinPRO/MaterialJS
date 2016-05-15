@@ -7,7 +7,7 @@
     },
     "version": "0.0.41",
     "license": [{
-        "type": "BSD",
+        "type": "BSD-3-Clause",
         "url": "https://github.com/CosmicMind/MaterialJS/blob/master/LICENSE.md"
     }],
     "engines": {
